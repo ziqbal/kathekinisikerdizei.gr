@@ -113,13 +113,15 @@ function initRollovers()
 			arrowBottomTween.reverse()
 		}
 	)
-	
+
+/*	
 	$('#play-now').click(
 		function(){
 		TweenMax.to($('#win2000'),.7, {css:{marginTop:-645},delay:.25})
 		TweenMax.to($('.form-container'),.7, {marginTop:-345,autoAlpha:1})
 		}
 	)
+*/
 
 	$('#top-arrow').click(
 		function(){
