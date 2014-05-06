@@ -8,6 +8,18 @@ var _slave = ( function( ) {
 //////////////////////////////////////////////////////////////////////////////
 
 
+	_my.setupCompcodeinputAction = function( ) {
+
+			$(document).on("click","._compcodeinputAction", function(){
+
+				var compcodeinput = $("._compcodeinput").first().val();
+				console.log(compcodeinput);
+
+			});
+
+	};
+
+
 //////////////////////////////////////////////////////////////////////////////
 
 	_my._runFunctions = function( ) {
@@ -15,7 +27,7 @@ var _slave = ( function( ) {
 		var lastFunctionsPos = _functions.length - 1;
 
 		for ( var i = 0 ; i <= lastFunctionsPos ; i++) {
-			console.log(_functions[i]);
+			//console.log(_functions[i]);
 
 			window[ _name ][ _functions[i] ]( ); 
 
@@ -30,6 +42,8 @@ var _slave = ( function( ) {
 	};
 
 	_my._init = function( ) {
+
+		_my._run("setupCompcodeinputAction");
 
 		_ready = true;
 		_my._runFunctions( );
