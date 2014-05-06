@@ -72,7 +72,7 @@ crownTL.add(TweenMax.to($('#top-crown'), .3, {rotation:0,scaleX:1,scaleY:1}))
 function initRollovers()
 {
 	$('.menu-item').each(function(index, element){
-		element.yPos=positions[index]
+		
 		var ha = new TimelineLite({paused:true});
 		ha.add(TweenMax.to($(this).find('.anim-arrow'), .3, {css:{backgroundPosition:"-100px 0px"},ease:Linear.easeInOut}))
 		element.animation=ha
