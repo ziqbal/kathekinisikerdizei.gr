@@ -1,0 +1,29 @@
+<?php
+
+$UIWIDGET=stringSanitizeHTML(templateVarDataProp('code'));
+
+$widgetPath=PROJECTTHEMEPATH."/_ui_/_{$UIWIDGET}.php";
+
+
+if(file_exists($widgetPath)){
+
+	if($starpageLoadFirstTime){
+		$widgetConfigPath=PROJECTTHEMEPATH."/_ui_/_config.php";
+		if(file_exists($widgetConfigPath)){
+			include_once($widgetConfigPath);
+		}
+	}
+
+	print("<div class='uiwidgetContainer {$UIWIDGET}Container'>");
+	include($widgetPath);
+	print("</div>");
+
+}else{
+
+	print("NO WIDGET [_{$UIWIDGET}] FOUND!");
+	
+}
+
+
+?>
+
