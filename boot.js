@@ -57,6 +57,28 @@ $(function(){
 	} );		
 
 
+    $( "#testAction" ).click( function( ) {
+
+        splashScreenSlideOut();
+        $( '#content' ).html( $( '#testcontainer' ).html( ) );
+
+    } );        
 
 });
+
+
+function _codeError(){
+        $( '#content' ).html( $( '#errorcontainer' ).html( ) );
+}
+function _codeAccepted(){
+    alert("CODE Accepted!!!");
+}
+
+function showPrize(){
+    $( '#content' ).html( $( '#prizediv' ).html( ) );
+}
+function showUserForm(){
+    $( '#content' ).html( $( '#userformcontainer' ).html( ) );
+}
+
 
