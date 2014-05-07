@@ -76,6 +76,7 @@ function initRollovers()
 		var ha = new TimelineLite({paused:true});
 		ha.add(TweenMax.to($(this).find('.anim-arrow'), .3, {css:{backgroundPosition:"-100px 0px"},ease:Linear.easeInOut}))
 		element.animation=ha
+		element.selected=false
 	
 	})
 	$('.menu-item').hover(
@@ -85,7 +86,9 @@ function initRollovers()
 		},
 		function ()
 		{
+			if(!this.selected){
 			this.animation.reverse()
+			}
 		}
 	)
 	

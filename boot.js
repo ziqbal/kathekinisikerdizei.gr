@@ -27,7 +27,7 @@ $(function(){
 var currentDiv=$( '#win' )
 	TweenMax.fromTo( currentDiv, .7 , { top : 345 , autoAlpha : 0 } ,{ top : 0 , autoAlpha : 1 }  );
 
-	function splashScreenSlideOut(divToSlide ) {
+	function splashScreenSlideOut(divToSlide, activeMenu ) {
 
 
 		
@@ -35,13 +35,25 @@ var currentDiv=$( '#win' )
 			TweenMax.fromTo( currentDiv, .7 , { top: 0},{top: -345 } );
 			TweenMax.fromTo( divToSlide , .7 , { top : 345 , autoAlpha : 0 } ,{ top : 0 , autoAlpha : 1 } );
 
-			currentDiv=divToSlide
+	$('.menu-item').each(function(index, element){
+		
+		if(element!=activeMenu){
+		element.animation.reverse()
+		element.selected=false}
+		else{
+			activeMenu.selected=true
+		}
+	
+	})
+	
+	
+	currentDiv=divToSlide
 
 	};
 
 	$( "#play-now" ).click( function( ) {
 
-		splashScreenSlideOut($( '#compcodeinputcontainer' ));
+		splashScreenSlideOut($( '#compcodeinputcontainer' ),this);
 		
 	/*	$( '#content' ).html( $( '#compcodeinputcontainer' ).html( ) );*/
 		
@@ -50,35 +62,35 @@ var currentDiv=$( '#win' )
 
 	$( "#prizesAction" ).click( function( ) {
 
-		splashScreenSlideOut($( '#prizescontainer' ));
+		splashScreenSlideOut($( '#prizescontainer' ),this);
 		/*$( '#content' ).html( $( '#prizescontainer' ).html( ) );*/
 
 	} );	
 	
 	$( "#winnersAction" ).click( function( ) {
 
-		splashScreenSlideOut($( '#winnerscontainer' ));
+		splashScreenSlideOut($( '#winnerscontainer' ),this);
 		/*$( '#content' ).html( $( '#prizescontainer' ).html( ) );*/
 
 	} );
 	
 	$( "#storesAction" ).click( function( ) {
 
-		splashScreenSlideOut($( '#storescontainer' ));
+		splashScreenSlideOut($( '#storescontainer' ),this);
 		/*$( '#content' ).html( $( '#prizescontainer' ).html( ) );*/
 
 	} );
 	
-	$( "#directionsAction" ).click( function( ) {
+	$( "#instructionsAction" ).click( function( ) {
 
-		splashScreenSlideOut($( '#directionscontainer' ));
+		splashScreenSlideOut($( '#instructionscontainer' ),this);
 		/*$( '#content' ).html( $( '#prizescontainer' ).html( ) );*/
 
 	} );
 	
 	$( "#termsAction" ).click( function( ) {
 
-		splashScreenSlideOut($( '#termscontainer' ));
+		splashScreenSlideOut($( '#termscontainer' ),this);
 		/*$( '#content' ).html( $( '#prizescontainer' ).html( ) );*/
 
 	} );	
