@@ -5,6 +5,11 @@
 	src: url('../fonts/pfcentrosanspro-medium-webfont.eot');
 	src: url('../fonts/pfcentrosanspro-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pfcentrosanspro-medium-webfont.woff') format('woff'), url('../fonts/pfcentrosanspro-medium-webfont.ttf') format('truetype'), url('../fonts/pfcentrosanspro-medium-webfont.svg#webfont') format('svg');
 }
+@font-face {
+	font-family: 'CentroBold';
+	src: url('../fonts/pfcentrosanspro-bold-webfont.eot');
+	src: url('../fonts/pfcentrosanspro-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/pfcentrosanspro-bold-webfont.woff') format('woff'), url('../fonts/pfcentrosanspro-bold-webfont.ttf') format('truetype'), url('../fonts/pfcentrosanspro-bold-webfont.svg#webfont') format('svg');
+}
 body {
 	font-family:'CentroMedium', Arial, Helvetica, sans-serif;
 	opacity:0;
@@ -172,4 +177,46 @@ body {
 	position:absolute;
 	top:345px;
 	left:210px;
+	
+}
+
+.contentWrapper{
+	padding:10px;
+}
+h1{
+font-size:18px;
+	font-family:'CentroBold', Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+.codeInput{
+	background-image:url(../img/textBackground.jpg) !important; 
+	background-repeat:no-repeat;
+	width:289px !important;
+	height:31px !important;
+	border:none !important;
+	margin:auto !important;
+	font-size:0.8rem !important;
+}
+.submitBtn
+{
+	background-image:url(../img/button-bg.jpg);
+    border:none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "CentroBold",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 14px;
+ 
+   
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+	width:141px;
+	height:30px;
+   
+}
+.submitBtn:hover{
+background-image:url(../img/button-bg-over.jpg)
 }
