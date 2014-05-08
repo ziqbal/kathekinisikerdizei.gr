@@ -70,7 +70,7 @@
       <div id="compcodeinputcontainer"  class="contentItem"> <img src="img/bar.jpg"/>
         <div class='contentWrapper'>
           <h1>ΠΛΗΚΤΡΟΛΟΓΗΣΕ ΤΟΝ ΚΩΔΙΚΟ ΣΟΥ</h1>
-          <input class='_compcodeinput codeInput' type='text'/>
+          <input class='_compcodeinput codeInput' type='text' value='9860282637'/>
           <button class='_compcodeinputAction submitBtn'>ΥΠΟΒΟΛΗ</button>
         </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
@@ -258,7 +258,13 @@
       
       
       <div id="userformcontainer" class="contentItem"> <img src="img/bar.jpg"/> USER FORM
-        <button onClick="uiSetScreen('thankscontainer');">>SAVE</button>
+        <form id='userform'>
+            <input type='text' name='firstname' value="Joe"/>
+            <input type='text' name='lastname' value="Bloggs"/>
+        </form>
+
+        <button id='userformsave'>SAVE</button>
+
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
       

@@ -113,6 +113,7 @@ var currentDiv=$( '#win' )
 	}
 	screenTickTock();
 
+	//uiSetScreen('userformcontainer');
 
     
 });
@@ -136,5 +137,4 @@ function uiSetScreen(screen){
 	console.log("SCREEN "+screen);
 	window._uiScreen=screen;
 }
-
 
