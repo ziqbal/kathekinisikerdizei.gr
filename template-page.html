@@ -129,6 +129,8 @@ LOSE LOSE
 <div id="codewincontainer" class="contentItem">
 <img src="img/bar.jpg"/>
 WIN WIN
+You win <span id=''>????</span>
+<button onclick="uiSetScreen('userformcontainer');">click to user form</button>
 <img id="bottom-bar" src="img/bar.jpg"/> 
 </div>      
 <!-- ------- -->      
@@ -136,10 +138,35 @@ WIN WIN
 <div id="codeusedcontainer" class="contentItem">
 <img src="img/bar.jpg"/>
 Code already used
+
+<div id='codeusedidwin'>
+CODE WON <span id='codeuseditem'>???</span>
+</div>  
+<div id='codeuseddidnotwin'>
+CODE DID NOT WIN
+</div>  
+
 <img id="bottom-bar" src="img/bar.jpg"/> 
 </div>      
 <!-- ------- -->       
-       
+
+<div id="userformcontainer" class="contentItem">
+<img src="img/bar.jpg"/>
+USER FORM
+
+<button onclick="uiSetScreen('thankscontainer');">>SAVE</button>
+
+<img id="bottom-bar" src="img/bar.jpg"/> 
+</div>      
+<!-- ------- -->              
+<div id="thankscontainer" class="contentItem">
+<img src="img/bar.jpg"/>
+Thank You For Playing!
+<img id="bottom-bar" src="img/bar.jpg"/> 
+</div>      
+<!-- ------- -->              
+
+
       <!--{starpages--><!--}starpages--> 
       
     </div>

@@ -103,9 +103,7 @@ var currentDiv=$( '#win' )
 	var currentScreen="";
 	function screenTickTock(){
 		if(currentScreen!=window._uiScreen){
-			console.log("hey!!!");
 			currentScreen=window._uiScreen;
-
 			if(currentScreen!==""){
 				splashScreenSlideOut($( '#'+currentScreen ),this);
 			}
