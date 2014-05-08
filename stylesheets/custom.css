@@ -67,9 +67,9 @@ body {
 .menu-text {
 	line-height:51px;
 	opacity:1;
-	font-size:16px;
-	font-weight:bold;
-	font-family:"CentroMedium", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	
+	font-family:"CentroBold", Arial, Helvetica, sans-serif;
 	margin-left:10px;
 	position:absolute;
 	top:0;
@@ -183,18 +183,26 @@ body {
 .contentWrapper{
 	padding:10px;
 }
-h1{
+.contentWrapper h1{
 font-size:18px;
 	font-family:'CentroBold', Arial, Helvetica, sans-serif;
 	text-align:center;
+	margin-top:20px;
 }
+.contentWrapper p{
+font-size:12px;
+	font-family:'CentroMedium', Arial, Helvetica, sans-serif;
+	text-align:center;
+	line-height:12px;
+}
+
 .codeInput{
 	background-image:url(../img/textBackground.jpg) !important; 
 	background-repeat:no-repeat;
 	width:289px !important;
 	height:31px !important;
 	border:none !important;
-	margin:auto !important;
+	margin:20px auto !important;
 	font-size:0.8rem !important;
 }
 .submitBtn
@@ -203,13 +211,13 @@ font-size:18px;
     border:none;
     color: #FFFFFF;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     font-family: "CentroBold",Helvetica,Arial,sans-serif;
     font-size: 14px;
     font-weight: normal;
-    line-height: 14px;
- 
-   
+    line-height: 14px; 
+   	padding:0;
+   	margin:10px auto;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -220,3 +228,81 @@ font-size:18px;
 .submitBtn:hover{
 background-image:url(../img/button-bg-over.jpg)
 }
+
+.scrollbar{
+width:420px;
+height:300px;
+margin:10px auto;
+
+}
+.scrollContent{
+
+} 
+
+#termsText{
+	font-family:'CentroMedium', Arial, Helvetica, sans-serif;
+font-size:10px;
+}
+.presents-text{
+	font-family: "CentroBold",Helvetica,Arial,sans-serif;
+	font-size:12px;
+	line-height:22px;
+	float:left;
+	width:300px;
+	}
+
+.presents-text::after{
+	clear:both;
+	
+}
+.presentsWrapper{
+margin-left:10px;
+}
+.present{
+float:left;
+height:22px;
+margin-right:5px;
+font-size:13px;
+background-repeat:no-repeat;
+width:37px;
+padding-left:2px;
+}
+.presents-light{
+	background-image:url(../img/presents-arrow-light.png);
+	
+}
+.presents-dark{
+	background-image:url(../img/presents-arrow-dark.png);
+	color:#fff;
+}
+.presentsList{
+list-style-type: none;
+
+}
+
+ul li{
+float:left;
+}
+.presentsSpacer{
+margin-bottom:10px;
+}
+
+
+.columnTitle{
+width:170px;
+text-align:center;
+font-size:14px;
+float: left;
+}
+.columnCell{
+width:170px;
+text-align:left;
+font-size:14px;
+float: left !important;
+margin:5px;
+background:#CCC;
+line-height:18px;
+padding:2px;
+font-size:11px;
+}
+

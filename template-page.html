@@ -7,9 +7,11 @@
 <title>kathekinisikerdizei.gr</title>
 <link rel="stylesheet" href="stylesheets/app.css" />
 <link rel="stylesheet" href="stylesheets/custom.css" />
+<link href="stylesheets/jquery.mCustomScrollbar.css" rel="stylesheet" />
 <script src="bower_components/modernizr/modernizr.js"></script>
 <script src="js/jquery.js"></script>
 <script src="boot.js"></script>
+
 <!--{notificationotnarchive--><!--}notificationotnarchive-->
 </head>
 <body>
@@ -30,32 +32,32 @@
         <li class="menu-item" id="play-now">
           <div class="bg-light">&nbsp;</div>
           <div class="menu-arrow-light anim-arrow" id="menu1">&nbsp;</div>
-          <div class="menu-text text-dark" id="text1"> ΠΑΙΞΕ ΤΩΡΑ </div>
+          <div class="menu-text text-dark" id="text1">ΕΙΣΑΓΩΓΗ ΚΩΔΙΚΟΥ</div>
+        </li>
+        <li class="menu-item" id="instructionsAction">
+          <div class="bg-dark">&nbsp;</div>
+          <div class="menu-arrow-dark anim-arrow"  id="menu2">&nbsp;</div>
+          <div class="menu-text text-light" id="text2">ΠΩΣ ΣΥΜΜΕΤΕΧΩ</div>
+        </li>
+        <li class="menu-item" id="termsAction">
+          <div class="bg-light" >&nbsp;</div>
+          <div class="menu-arrow-light anim-arrow" id="menu3">&nbsp;</div>
+          <div class="menu-text text-dark" id="text3">ΟΡΟΙ ΣΥΜΜΕΤΟΧΗΣ</div>
         </li>
         <li class="menu-item" id='prizesAction'>
           <div class="bg-dark">&nbsp;</div>
-          <div class="menu-arrow-dark anim-arrow" id="menu2">&nbsp;</div>
-          <div class="menu-text text-light" id="text2">ΔΩΡΑ </div>
-        </li>
-        <li class="menu-item" id='storesAction'>
-          <div class="bg-light">&nbsp;</div>
-          <div class="menu-arrow-light anim-arrow" id="menu3">&nbsp;</div>
-          <div class="menu-text text-dark" id="text3">ΚΑΤΑΣΤΗΜΑΤΑ</div>
+          <div class="menu-arrow-dark anim-arrow" id="menu4">&nbsp;</div>
+          <div class="menu-text text-light" id="text4">ΔΩΡΑ </div>
         </li>
         <li class="menu-item" id='winnersAction'>
-          <div class="bg-dark">&nbsp;</div>
-          <div class="menu-arrow-dark anim-arrow" id="menu4">&nbsp;</div>
-          <div class="menu-text text-light anim-arrow" id="text4">ΝΙΚΗΤΕΣ ΔΙΑΓΩΝΙΣΜΟΥ </div>
-        </li>
-        <li class="menu-item" id="instructionsAction">
           <div class="bg-light">&nbsp;</div>
-          <div class="menu-arrow-light anim-arrow"  id="menu5">&nbsp;</div>
-          <div class="menu-text text-dark" id="text5">ΤΡΟΠΟΣ ΣΥΜΜΕΤΟΧΗΣ </div>
+          <div class="menu-arrow-light anim-arrow" id="menu5">&nbsp;</div>
+          <div class="menu-text text-dark anim-arrow" id="text5">ΝΙΚΗΤΕΣ</div>
         </li>
-        <li class="menu-item" id="termsAction">
-          <div class="bg-dark" >&nbsp;</div>
+        <li class="menu-item" id='storesAction'>
+          <div class="bg-dark">&nbsp;</div>
           <div class="menu-arrow-dark anim-arrow" id="menu6">&nbsp;</div>
-          <div class="menu-text text-light" id="text6"> ΟΡΟΙ ΣΥΜΜΕΤΟΧΗΣ</div>
+          <div class="menu-text text-light" id="text6">ΚΑΤΑΣΤΗΜΑΤΑ</div>
         </li>
       </ul>
     </div>
@@ -65,108 +67,209 @@
       <div id="win" class="contentItem"> <img src="img/win2000.png" > </div>
       
       <!-- ------- -->
-      <div id="compcodeinputcontainer"  class="contentItem">
-       <img src="img/bar.jpg"/>
-         <div class='contentWrapper'><h1>ΠΛΗΚΤΡΟΛΟΓΗΣΕ ΤΟΝ ΚΩΔΙΚΟ ΣΟΥ</h1>
-        <input class='_compcodeinput codeInput' type='text' value='5321896850'/>
-        <button class='_compcodeinputAction submitBtn'>Play</button></div>
+      <div id="compcodeinputcontainer"  class="contentItem"> <img src="img/bar.jpg"/>
+        <div class='contentWrapper'>
+          <h1>ΠΛΗΚΤΡΟΛΟΓΗΣΕ ΤΟΝ ΚΩΔΙΚΟ ΣΟΥ</h1>
+          <input class='_compcodeinput codeInput' type='text'/>
+          <button class='_compcodeinputAction submitBtn'>ΥΠΟΒΟΛΗ</button>
+        </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- --> 
       
       <!-- ------- -->
-     
-      <div id="prizescontainer" class="contentItem">
-        <img src="img/bar.jpg"/>
-     <div class="contentWrapper"> Prizes </div>
-       <img id="bottom-bar" src="img/bar.jpg"/> 
-       </div>
       
+      <div id="prizescontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="contentWrapper scrollbar">
+          <ul class="presentsList scrollContent">
+            <h1>ΔΩΡΑ</h1>
+            <li>
+              <div class="presents-light present">20</div>
+              <div class="presents-text"> Pre paid cards Τράπεζας Κύπρου αξίας 2000€ </div>
+            </li>
+            <li>
+              <div class="presents-dark present">20</div>
+              <div class="presents-text"> Pre paid cards Τράπεζας Κύπρου αξίας 500€ </div>
+            </li>
+            <li>
+              <div class="presents-light present">100</div>
+              <div class="presents-text"> Pre paid cards Τράπεζας Κύπρου αξίας 100€ </div>
+            </li>
+            <li class="presentsSpacer">
+              <div class="presents-dark present">300</div>
+              <div class="presents-text"> Pre paid cards Τράπεζας Κύπρου αξίας 50€ </div>
+            </li>
+            <li>
+              <div class="presents-light present">50</div>
+              <div class="presents-text"> Δωροεπιταγές ΓΕΡΜΑΝΟΣ αξίας 100€ </div>
+            </li>
+            <li>
+              <div class="presents-dark present">200</div>
+              <div class="presents-text"> Δωροεπιταγές ΓΕΡΜΑΝΟΣ αξίας 50€ </div>
+            </li>
+            <li class="presentsSpacer">
+              <div class="presents-light present">100</div>
+              <div class="presents-text"> Δωροεπιταγές ΓΕΡΜΑΝΟΣ αξίας 25€ </div>
+            </li>
+            <li>
+              <div class="presents-light present">40</div>
+              <div class="presents-text"> MP4 Osio SRΜ 8380 WHITE  8GB </div>
+            </li>
+            <li>
+              <div class="presents-dark present">40</div>
+              <div class="presents-text"> MP4 Osio SRΜ 8380 BLACK  8GB </div>
+            </li>
+            <li>
+              <div class="presents-light present">15</div>
+              <div class="presents-text"> Εξωτερικοί σκληροί δίσκοι HDD 2.5'' TOSHIBA 1,5 TB </div>
+            </li>
+            <li class="presentsSpacer">
+              <div class="presents-dark present">15</div>
+              <div class="presents-text"> Εξωτερικοί σκληροί δίσκοι HDD 2.5'' TOSHIBA 1 TB </div>
+            </li>
+            <li>
+              <div class="presents-light present">100</div>
+              <div class="presents-text"> USB COSMOTE 64GB </div>
+            </li>
+            <li>
+              <div class="presents-dark present">100</div>
+              <div class="presents-text"> USB COSMOTE 32GB </div>
+            </li>
+            <li class="presentsSpacer">
+              <div class="presents-light present">200</div>
+              <div class="presents-text"> USB COSMOTE 16GB </div>
+            </li>
+          </ul>
+        </div>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      
+      <!-- ------- -->
+      <div id="storescontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="contentWrapper"> stores </div>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <!-- ------- -->
+      
+      <div id="winnerscontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="contentWrapper scrollbar">
+          <div class="scrollContent">
+            <h1>ΝΙΚΗΤΕΣ</h1>
+            <div class="columnTitle">Όνομα</div>
+            <div class="columnTitle">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+            <div class="columnCell">Όνομα</div>
+            <div class="columnCell">Δώρο</div>
+          </div>
+        </div>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <!-- ------- -->
+      
+      <div id="instructionscontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="contentWrapper">
+          <h1>ΠΩΣ ΣΥΜΜΕΤΕΧΩ;</h1>
+          <p>Σε όποιο δίκτυο και αν ανήκεις, <br/>
+            κάνε νέα σύνδεση COSMOTE ή ΟΤΕ TV <br/>
+            ή αγορές αξίας 25€ και άνω<br/>
+            σε ένα κατάστημα COSMOTE ή ΓΕΡΜΑΝΟΣ<br/>
+            από 12/05/2014 έως 31/05/2014, <br/>
+            λαμβάνεις ένα κουπόνι συμμετοχής.<br/>
+          </p>
+          <h1>Άνοιξε και κέρδισε έως και 2.000€  κάθε μέρα <br/>
+            και πολλά άλλα δώρα στη στιγμή!</h1>
+          <img src="img/howtowin.png" width="423" height="51"></div>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <!-- ------- -->
+      
+      <div id="termscontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="contentWrapper scrollbar" id="termsText">
+          <div class="scrollContent" >
+            <h1>ΟΡΟΙ ΣΥΜΜΕΤΟΧΗΣ</h1>
+            <br/>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            
+            
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </div>
+        </div>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+        
+           <!-- ------- -->
+        
+        
+      <div id="codenotvalidcontainer" class="contentItem"> <img src="img/bar.jpg"/> Code Not Valid
+        <button onClick="uiSetScreen('compcodeinputcontainer');">click to go back</button>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <!-- ------- -->
+      
+      
+      <div id="codelosecontainer" class="contentItem"> <img src="img/bar.jpg"/> LOSE LOSE <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <!-- ------- -->
+      
+      
+      <div id="codewincontainer" class="contentItem"> <img src="img/bar.jpg"/> WIN WIN
+        You win <span id='codewinitemlabel'>????</span>
+        <button onClick="uiSetScreen('userformcontainer');">click to user form</button>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- --> 
-         <div id="storescontainer" class="contentItem">
-        <img src="img/bar.jpg"/>
-      <div class="contentWrapper"> stores </div>
-       <img id="bottom-bar" src="img/bar.jpg"/> 
-       </div>
-         <!-- ------- --> 
-         <div id="winnerscontainer" class="contentItem">
-        <img src="img/bar.jpg"/>
-         <div class="contentWrapper">
-      Winners
-      </div> 
-       <img id="bottom-bar" src="img/bar.jpg"/> 
-       </div>
-         <!-- ------- --> 
-         <div id="instructionscontainer" class="contentItem">
-        <img src="img/bar.jpg"/>
-      instructions 
-       <img id="bottom-bar" src="img/bar.jpg"/> 
-       </div>
-         <!-- ------- --> 
-         <div id="termscontainer" class="contentItem">
-        <img src="img/bar.jpg"/>
-         <div class="contentWrapper">
-      Terms </div>
-       <img id="bottom-bar" src="img/bar.jpg"/> 
-       </div>
-
-
-<!-- ------- --> 
-<div id="codenotvalidcontainer" class="contentItem">
-<img src="img/bar.jpg"/>
-Code Not Valid
-
-<button onclick="uiSetScreen('compcodeinputcontainer');">click to go back</button>
-
-<img id="bottom-bar" src="img/bar.jpg"/> 
-</div>      
-<!-- ------- --> 
-<div id="codelosecontainer" class="contentItem">
-<img src="img/bar.jpg"/>
-LOSE LOSE
-<img id="bottom-bar" src="img/bar.jpg"/> 
-</div>      
-<!-- ------- -->        
-<div id="codewincontainer" class="contentItem">
-<img src="img/bar.jpg"/>
-WIN WIN
-You win <span id='codewinitemlabel'>????</span>
-<button onclick="uiSetScreen('userformcontainer');">click to user form</button>
-<img id="bottom-bar" src="img/bar.jpg"/> 
-</div>      
-<!-- ------- -->      
-<!-- ------- -->        
-<div id="codeusedcontainer" class="contentItem">
-<img src="img/bar.jpg"/>
-Code already used
-
-<div id='codeuseddidwin'>
-CODE WON <span id='codeuseddidwinlabel'>???</span>
-</div>  
-<div id='codeuseddidnotwin'>
-CODE DID NOT WIN
-</div>  
-
-<img id="bottom-bar" src="img/bar.jpg"/> 
-</div>      
-<!-- ------- -->       
-
-<div id="userformcontainer" class="contentItem">
-<img src="img/bar.jpg"/>
-USER FORM
-
-<button onclick="uiSetScreen('thankscontainer');">>SAVE</button>
-
-<img id="bottom-bar" src="img/bar.jpg"/> 
-</div>      
-<!-- ------- -->              
-<div id="thankscontainer" class="contentItem">
-<img src="img/bar.jpg"/>
-Thank You For Playing!
-<img id="bottom-bar" src="img/bar.jpg"/> 
-</div>      
-<!-- ------- -->              
-
-
+      
+      
+      
+      <!-- ------- -->
+      <div id="codeusedcontainer" class="contentItem"> <img src="img/bar.jpg"/> Code already used
+        <div id='codeuseddidwin'> CODE WON <span id='codeuseddidwinlabel'>???</span> </div>
+        <div id='codeuseddidnotwin'> CODE DID NOT WIN </div>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <!-- ------- -->
+      
+      
+      
+      
+      <div id="userformcontainer" class="contentItem"> <img src="img/bar.jpg"/> USER FORM
+        <button onClick="uiSetScreen('thankscontainer');">>SAVE</button>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <!-- ------- -->
+      
+      
+      
+      <div id="thankscontainer" class="contentItem"> <img src="img/bar.jpg"/> Thank You For Playing! <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <!-- ------- --> 
+      
+      
+      
+      
       <!--{starpages--><!--}starpages--> 
       
     </div>
@@ -181,10 +284,15 @@ Thank You For Playing!
 <script src="js/app.js"></script> 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script> 
 <script src="js/custom.js"></script> 
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
 <script type="text/javascript">
 	//<![CDATA[
 		$(window).load(function() { 
-		
+		$(".scrollContent").mCustomScrollbar({
+					scrollButtons:{
+						enable:false
+					}
+				});
 		startAnim()
 		})
 	//]]>
