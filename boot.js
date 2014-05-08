@@ -115,6 +115,7 @@ var currentDiv=$( '#win' )
 
 	//uiSetScreen('userformcontainer');
 	//uiSetScreen('winnerscontainer');
+	//uiSetScreen('storescontainer');
 
     
 });
