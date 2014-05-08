@@ -96,6 +96,19 @@ var currentDiv=$( '#win' )
 	} );	
 
 
+	window._uiScreen="";
+	var currentScreen="";
+	function screenTickTock(){
+		if(currentScreen!=window._uiScreen){
+			console.log("hey!!!");
+			currentScreen=window._uiScreen;
+			splashScreenSlideOut($( '#'+currentScreen ),this);
+		}
+		setTimeout(screenTickTock,100);
+	}
+	screenTickTock();
+
+
     
 });
 
@@ -112,6 +125,10 @@ function showPrize(){
 }
 function showUserForm(){
     $( '#content' ).html( $( '#userformcontainer' ).html( ) );
+}
+
+function uiSetScreen(screen){
+	window._uiScreen=screen;
 }
 
 
