@@ -49,6 +49,9 @@ var currentDiv=$( '#win' )
 	
 	currentDiv=divToSlide
 
+	window._uiScreen="";
+
+
 	};
 
 	$( "#play-now" ).click( function( ) {
@@ -102,7 +105,10 @@ var currentDiv=$( '#win' )
 		if(currentScreen!=window._uiScreen){
 			console.log("hey!!!");
 			currentScreen=window._uiScreen;
-			splashScreenSlideOut($( '#'+currentScreen ),this);
+
+			if(currentScreen!==""){
+				splashScreenSlideOut($( '#'+currentScreen ),this);
+			}
 		}
 		setTimeout(screenTickTock,100);
 	}
