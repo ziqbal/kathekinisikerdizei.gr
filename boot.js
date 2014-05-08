@@ -132,6 +132,7 @@ function showUserForm(){
 }
 
 function uiSetScreen(screen){
+	console.log("SCREEN "+screen);
 	window._uiScreen=screen;
 }
 
