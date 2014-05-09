@@ -374,7 +374,7 @@ padding:0!important;
 	margin:0 !important;
 }
 .optinLabel{
-font-size:8px !important;
+font-size:6px !important;
 floar:left;
 line-height:9px;
 }
@@ -407,3 +407,6 @@ padding:0px !important;
 .ddLabel{
 	text-align:center;
 }
+
+#userformsave::after{
+	margin-bottom:20px;

@@ -56,8 +56,8 @@ var currentDiv=$( '#win' )
 
 	$( "#play-now" ).click( function( ) {
 
-//	splashScreenSlideOut($( '#storescontainerstep3' ),this);
-	splashScreenSlideOut($( '#compcodeinputcontainer' ),this);
+	splashScreenSlideOut($( '#userformcontainer' ),this);
+//	splashScreenSlideOut($( '#compcodeinputcontainer' ),this);
 		//splashScreenSlideOut($( '#codelosecontainer' ),this);
 		
 	/*	$( '#content' ).html( $( '#compcodeinputcontainer' ).html( ) );*/
