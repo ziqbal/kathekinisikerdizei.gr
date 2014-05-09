@@ -56,8 +56,8 @@ var currentDiv=$( '#win' )
 
 	$( "#play-now" ).click( function( ) {
 
-//splashScreenSlideOut($( '#userformcontainer' ),this);
-		splashScreenSlideOut($( '#compcodeinputcontainer' ),this);
+splashScreenSlideOut($( '#storescontainerstep3' ),this);
+//		splashScreenSlideOut($( '#compcodeinputcontainer' ),this);
 		//splashScreenSlideOut($( '#codelosecontainer' ),this);
 		
 	/*	$( '#content' ).html( $( '#compcodeinputcontainer' ).html( ) );*/
@@ -99,7 +99,20 @@ var currentDiv=$( '#win' )
 		/*$( '#content' ).html( $( '#prizescontainer' ).html( ) );*/
 
 	} );	
-
+$('#top-arrow').click(
+		function(){
+			splashScreenSlideOut($( '#win' ),null)
+		//TweenMax.to($('#win2000'),.7, {css:{marginTop:0}})
+		//TweenMax.to($('.form-container'),.7, {marginTop:0,autoAlpha:0,delay:.2})
+		}
+	)
+	$('#bottom-arrow').click(
+		function(){
+			splashScreenSlideOut($( '#win' ),null)
+	//	TweenMax.to($('#win2000'),.7, {css:{marginTop:0}})
+		//TweenMax.to($('.form-container'),.7, {marginTop:0,autoAlpha:0,delay:.2})
+		}
+	)
 
 
 	window._uiScreen="";

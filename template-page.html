@@ -160,7 +160,34 @@
         </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
+    
       
+      <div id="storescontainerstep2" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="contentWrapper">
+       <h1>KATAΣΤΗΜΑΤΑ <span id="storesCategory">COSMOTE</span></h1>
+           <select id='locationsRegion' class="selectDropDown">
+              <option value=''>Επιλέξτε Νομό</option>
+            </select>
+            <select id='locationsArea' class="selectDropDown">
+              <option value=''>Επιλέξτε πόλη</option>
+            </select>
+           
+        <button class="submitBtn" onClick="uiSetScreen('ΧΧΧΧΧ');">ANΑΖΗΤΗΣΗ</button>
+        </div>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+     
+     <!-- ------- -->
+      <div id="storescontainerstep3" class="contentItem"> <img src="img/bar.jpg"/>
+       <div class="contentWrapper scrollbar">
+        <div class="scrollContent" >
+       <h1>Έχετε επιλέξει να εμφανιστούν τα καταστήματα <br/> <span id="storesCategory">COSMOTE</span><br/>στο νομό <span id="storesRegion">Aττικής</span>, στην περιοχή  <span id="storesRegion">Αθήνα</span>.</h1>
+         
+            <div id='locationslist'></div>
+        </div>
+        </div>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+     
+     <!-- ------- -->
       <div id="winnerscontainer" class="contentItem"> <img src="img/bar.jpg"/>
         <div class="contentWrapper scrollbar">
           <div class="scrollContent">
@@ -262,8 +289,8 @@
           ΕΣΥ τυχερός! </span></div>
         <button class="submitBtn" onClick="uiSetScreen('compcodeinputcontainer');">ΕΠΙΣΤΡΟΦΗ</button>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
-      <!-- ------- -->
-      
+     
+     
       <div id="codewincontainer" class="contentItem"> <img src="img/bar.jpg"/> <span id='codedidwinkey'></span> <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- --> 
       
@@ -278,7 +305,7 @@
       <div id="userformcontainer" class="contentItem"> <img src="img/bar.jpg"/>
         <div class="contentWrapperForm">
           <h1>ΣΥΜΠΛΗΡΩΣΕ ΤΑ ΣΤΟΙΧΕΙΑ ΣΟΥ</h1>
-          <form id='userform'>
+          <form id='userform' data-abide>
             <!-- <input type='text' name='firstname' value="Joe"/>
           <input type='text' name='lastname' value="Bloggs"/>-->
             
@@ -287,8 +314,7 @@
                 <label for="right-label1" class="formLabel">* Όνομα</label>
               </div>
               <div class="small-6 columns">
-                <input name="u_name" class="formInput" type="text" id="right-label1" placeholder="Όνομα
-">
+                <input name="u_name" class="formInput" type="text" id="right-label1" placeholder="Όνομα" required>
               </div>
             </div>
             <div class="row">
@@ -296,7 +322,7 @@
                 <label for="right-label2" class="formLabel">* Επίθετο</label>
               </div>
               <div class="small-6 columns">
-                <input name="u_surname" class="formInput" type="text" id="right-label2" placeholder="Επίθετο">
+                <input name="u_surname" class="formInput" type="text" id="right-label2" placeholder="Επίθετο" required>
               </div>
             </div>
             <div class="row">
@@ -304,7 +330,7 @@
                 <label for="right-label3"  class="formLabel">* Κινητό τηλέφωνο </label>
               </div>
               <div class="small-6 columns">
-                <input name="u_mobile" class="formInput" type="text" id="right-label3" placeholder="Κινητό τηλέφωνο ">
+                <input name="u_mobile" class="formInput" type="number" id="right-label3" placeholder="Κινητό τηλέφωνο " required>
               </div>
             </div>
             <div class="row">
@@ -312,7 +338,7 @@
                 <label  for="right-label4" class="formLabel">Σταθερό τηλέφωνο </label>
               </div>
               <div class="small-6 columns">
-                <input name="u_phone" class="formInput" type="text" id="right-label4" placeholder="Σταθερό τηλέφωνο">
+                <input name="u_phone" class="formInput" type="number" id="right-label4" placeholder="Σταθερό τηλέφωνο">
               </div>
             </div>
             <div class="row">
@@ -320,7 +346,7 @@
                 <label for="right-label5" class="formLabel">* Διεύθυνση</label>
               </div>
               <div class="small-6 columns">
-                <input  name="u_address" class="formInput" type="text" id="right-label5" placeholder="Διεύθυνση">
+                <input  name="u_address" class="formInput" type="text" id="right-label5" placeholder="Διεύθυνση" required>
               </div>
             </div>
             <div class="row">
@@ -328,7 +354,7 @@
                 <label for="right-label6" class="formLabel">* Περιοχή / Πόλη</label>
               </div>
               <div class="small-6 columns">
-                <input  name="u_area" class="formInput" type="text" id="right-label6" placeholder="Περιοχή / Πόλη">
+                <input  name="u_area" class="formInput" type="text" id="right-label6" placeholder="Περιοχή / Πόλη" required>
               </div>
             </div>
             <div class="row">
@@ -336,7 +362,7 @@
                 <label for="right-label7" class="formLabel">* Τ.Κ.</label>
               </div>
               <div class="small-6 columns">
-                <input  name="u_po" class="formInput" type="text" id="right-label7" placeholder="Τ.Κ.">
+                <input  name="u_po" class="formInput" type="number" id="right-label7" placeholder="Τ.Κ." required>
               </div>
             </div>
             <div class="row">
@@ -344,7 +370,7 @@
                 <label for="right-label8" class="formLabel">* Ε-mail</label>
               </div>
               <div class="small-6 columns">
-                <input  name="u_email" class="formInput" type="text" id="right-label8" placeholder="Ε-mail">
+                <input  name="u_email" class="formInput" type="email" id="right-label8" placeholder="Ε-mail" required>
               </div>
             </div>
             <div class="row opts">
@@ -352,7 +378,7 @@
                 <div class="row">
                   <div class="small-6 column optin">
                     <div class="small-1 column ">
-                      <input type="radio" name="pData" value="true" id="acceptOptin" class="radioOptin">
+                      <input type="radio" name="pData" value="true" id="acceptOptin" class="radioOptin" required checked>
                     </div>
                     <div class="small-11 column">
                       <label class="optinLabel" for="acceptOptin">Συναινώ να τηρηθούν τα στοιχεία μου σε Αρχείο Προσωπικών Δεδομένων των εταιρειών COSMOTE και ΓΕΡΜΑΝΟΣ  για ενημέρωση εμπορικών προσφορών και προωθητικών ενεργειών.</label>
@@ -360,7 +386,7 @@
                   </div>
                   <div class="small-6 column  rightOptin">
                     <div class="small-1 column ">
-                    <input name='chk1' id="checkbox1" type="checkbox"></div>
+                    <input name='chk1' id="checkbox1" type="checkbox" required></div>
                     <div class="small-11 column">
                     <label  class="optinLabel"for="checkbox1">Δηλώνω πως τα παραπάνω στοιχεία είναι αληθή. Οποιαδήποτε αναληθής πληροφορία αποκλείει τον/την νικητή/νικήτρια.
 </label></div>
@@ -369,7 +395,7 @@
                 <div class="row">
                   <div class="small-6 column   optin">
                     <div class="small-1 column ">
-                      <input type="radio" name="pData" value="false" id="denyOptin" class="radioOptin">
+                      <input type="radio" name="pData" value="false" id="denyOptin" class="radioOptin" required>
                     </div>
                     <div class="small-11 column">
                       <label class="optinLabel" for="denyOptin">Δεν συναινώ να τηρηθούν τα στοιχεία μου σε Αρχείο Προσωπικών Δεδομένων των εταιρειών COSMOTE και ΓΕΡΜΑΝΟΣ  για ενημέρωση εμπορικών προσφορών και προωθητικών ενεργειών.</label>
@@ -377,7 +403,7 @@
                   </div>
                   <div class="small-6 column rightOptin">
                    <div class="small-1 column ">
-                    <input name='chk2' id="checkbox2" type="checkbox"></div>
+                    <input name='chk2' id="checkbox2" type="checkbox" required></div>
                     <div class="small-11 column">
                     <label class="optinLabel" for="checkbox2">Αποδέχομαι τους όρους συμμετοχής.</label>
                     </div>

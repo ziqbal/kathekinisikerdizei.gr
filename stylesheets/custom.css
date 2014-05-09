@@ -181,13 +181,13 @@ body {
 }
 
 .contentWrapper{
-	padding:10px;
+	padding:15px;
 }
 .contentWrapper h1{
 font-size:18px;
 	font-family:'CentroBold', Arial, Helvetica, sans-serif;
 	text-align:center;
-	margin-top:20px;
+
 }
 .contentWrapper p{
 font-size:12px;
@@ -241,9 +241,9 @@ background-image:url(../img/button-bg-over.jpg)
 }
 
 .scrollbar{
-width:420px;
+width:385px;
 height:300px;
-margin:10px auto;
+margin:auto;
 
 }
 .scrollContent{

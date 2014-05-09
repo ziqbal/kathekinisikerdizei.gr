@@ -93,7 +93,7 @@ function initRollovers()
 		}
 	)
 	
-	var arrowTopTween=	TweenMax.to($('#top-arrow'), .6, {scale:1.3, transformPerspective:true, ease:Strong.easeOut,paused:true})
+	var arrowTopTween=	TweenMax.to($('#home'), .6, {scale:1.1, ease:Strong.easeOut,paused:true})
 	$('#top-arrow').hover(
 	function(){
 		
@@ -106,15 +106,15 @@ function initRollovers()
 	)
 	
 	
-	var arrowBottomTween=	TweenMax.to($('#bottom-arrow'), .6, {top:"+7",scale:1.3, transformPerspective:true,ease:Strong.easeOut,paused:true})
+	var arrowBottomTween=	TweenMax.to($('#bottom-arrow'), .6, {top:"+7",scale:1.1,ease:Strong.easeOut,paused:true})
 	$('#bottom-arrow').hover(
 	function(){
 		
-	arrowBottomTween.play()
+	arrowTopTween.play()
 		},
 		function ()
 		{
-			arrowBottomTween.reverse()
+			arrowTopTween.reverse()
 		}
 	)
 
@@ -127,26 +127,15 @@ function initRollovers()
 	)
 */
 
-	$('#top-arrow').click(
-		function(){
-		TweenMax.to($('#win2000'),.7, {css:{marginTop:0}})
-		TweenMax.to($('.form-container'),.7, {marginTop:0,autoAlpha:0,delay:.2})
-		}
-	)
-	$('#bottom-arrow').click(
-		function(){
-		TweenMax.to($('#win2000'),.7, {css:{marginTop:0}})
-		TweenMax.to($('.form-container'),.7, {marginTop:0,autoAlpha:0,delay:.2})
-		}
-	)
 	
 	
-	mainTL.insert(TweenMax.to($('#top-arrow'), 1, {css:{scale:1.3}, ease:Elastic.easeOut}));
-	mainTL.insert(TweenMax.to($('#top-arrow'), .2, {css:{scale:1}, ease:Strong.easeIn,delay:.8}));
+	
+	mainTL.insert(TweenMax.to($('#top-arrow'), .4, {css:{scale:1.3}, ease:Strong.easeIn}));
+	mainTL.insert(TweenMax.to($('#top-arrow'), .4, {css:{scale:1}, ease:Strong.easeOut,delay:.4}));
 
-	mainTL.insert(TweenMax.to($('#bottom-arrow'), 1, {css:{scale:1.3}, ease:Elastic.easeOut,delay:.5}))
-	mainTL.insert(TweenMax.to($('#bottom-arrow'), .2, {css:{scale:1}, ease:Strong.easeIn,delay:1.3}))
+	mainTL.insert(TweenMax.to($('#bottom-arrow'), .4, {css:{scale:1.3}, ease:Strong.easeIn,delay:.5}))
+	mainTL.insert(TweenMax.to($('#bottom-arrow'), .4, {css:{scale:1}, ease:Strong.easeOut,delay:.9}))
 	
-	TweenMax.from($('#top-crown'), 1.5, {css:{top:-200,rotation:-150}, ease:Bounce.easeOut,delay:1.5})
+	TweenMax.from($('#top-crown'), 1.5, {css:{top:-200,rotation:-150}, ease:Strong.easeOut,delay:1.5})
 	
 }
