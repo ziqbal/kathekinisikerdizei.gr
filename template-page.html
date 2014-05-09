@@ -155,10 +155,8 @@
             <select id='locationsArea' class="selectDropDown">
               <option value=''>Επιλέξτε πόλη</option>
             </select>
-               
             <div id='locationslist'></div>
           </div>
-          
         </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
@@ -266,33 +264,144 @@
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
       
-      <div id="codewincontainer" class="contentItem"> <img src="img/bar.jpg"/> 
-      <span id='codedidwinkey'></span> 
-        <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <div id="codewincontainer" class="contentItem"> <img src="img/bar.jpg"/> <span id='codedidwinkey'></span> <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- --> 
       
       <!-- ------- -->
-
- <div id="codeusedcontainer" class="contentItem"> <img src="img/bar.jpg"/>
-         <div id='codeuseddidwin'> <span onClick="uiSetScreen('compcodeinputcontainer');" id='codeuseddidwinkey'></span>  </div>
-        
+      
+      <div id="codeusedcontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div id='codeuseddidwin'> <span onClick="uiSetScreen('compcodeinputcontainer');" id='codeuseddidwinkey'></span> </div>
         <div id='codeuseddidnotwin'> CODE DID NOT WIN </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
       
-      <div id="userformcontainer" class="contentItem"> <img src="img/bar.jpg"/> USER FORM
-        <form id='userform'>
-          <input type='text' name='firstname' value="Joe"/>
-          <input type='text' name='lastname' value="Bloggs"/>
-        </form>
-        <button id='userformsave'>SAVE</button>
+      <div id="userformcontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="contentWrapperForm">
+          <h1>ΣΥΜΠΛΗΡΩΣΕ ΤΑ ΣΤΟΙΧΕΙΑ ΣΟΥ</h1>
+          <form id='userform'>
+            <!-- <input type='text' name='firstname' value="Joe"/>
+          <input type='text' name='lastname' value="Bloggs"/>-->
+            
+            <div class="row">
+              <div class="small-6 columns">
+                <label for="right-label1" class="formLabel">* Όνομα</label>
+              </div>
+              <div class="small-6 columns">
+                <input class="formInput" type="text" id="right-label1" placeholder="Όνομα
+">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-6 columns">
+                <label for="right-label2" class="formLabel">* Επίθετο</label>
+              </div>
+              <div class="small-6 columns">
+                <input class="formInput" type="text" id="right-label2" placeholder="Επίθετο">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-6 columns">
+                <label for="right-label3"  class="formLabel">* Κινητό τηλέφωνο </label>
+              </div>
+              <div class="small-6 columns">
+                <input class="formInput" type="text" id="right-label3" placeholder="Κινητό τηλέφωνο ">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-6 columns">
+                <label for="right-label4" class="formLabel">Σταθερό τηλέφωνο </label>
+              </div>
+              <div class="small-6 columns">
+                <input class="formInput" type="text" id="right-label4" placeholder="Σταθερό τηλέφωνο">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-6 columns">
+                <label for="right-label5" class="formLabel">* Διεύθυνση</label>
+              </div>
+              <div class="small-6 columns">
+                <input class="formInput" type="text" id="right-label5" placeholder="Διεύθυνση">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-6 columns">
+                <label for="right-label6" class="formLabel">* Περιοχή / Πόλη</label>
+              </div>
+              <div class="small-6 columns">
+                <input class="formInput" type="text" id="right-label6" placeholder="Περιοχή / Πόλη">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-6 columns">
+                <label for="right-label7" class="formLabel">* Τ.Κ.</label>
+              </div>
+              <div class="small-6 columns">
+                <input class="formInput" type="text" id="right-label7" placeholder="Τ.Κ.">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-6 columns">
+                <label for="right-label8" class="formLabel">* Ε-mail</label>
+              </div>
+              <div class="small-6 columns">
+                <input class="formInput" type="text" id="right-label8" placeholder="Ε-mail">
+              </div>
+            </div>
+            <div class="row opts">
+              <div class="small-6 column">
+                <div class="row">
+                  <div class="small-6 column optin">
+                    <div class="small-1 column ">
+                      <input type="radio" name="pData" value="true" id="acceptOptin" class="radioOptin">
+                    </div>
+                    <div class="small-11 column">
+                      <label class="optinLabel" for="acceptOptin">Συναινώ να τηρηθούν τα στοιχεία μου σε Αρχείο Προσωπικών Δεδομένων των εταιρειών COSMOTE και ΓΕΡΜΑΝΟΣ  για ενημέρωση εμπορικών προσφορών και προωθητικών ενεργειών.</label>
+                    </div>
+                  </div>
+                  <div class="small-6 column  rightOptin">
+                    <div class="small-1 column ">
+                    <input id="checkbox1" type="checkbox"></div>
+                    <div class="small-11 column">
+                    <label  class="optinLabel"for="checkbox1">Δηλώνω πως τα παραπάνω στοιχεία είναι αληθή. Οποιαδήποτε αναληθής πληροφορία αποκλείει τον/την νικητή/νικήτρια.
+</label></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="small-6 column   optin">
+                    <div class="small-1 column ">
+                      <input type="radio" name="pData" value="false" id="denyOptin" class="radioOptin">
+                    </div>
+                    <div class="small-11 column">
+                      <label class="optinLabel" for="denyOptin">Δεν συναινώ να τηρηθούν τα στοιχεία μου σε Αρχείο Προσωπικών Δεδομένων των εταιρειών COSMOTE και ΓΕΡΜΑΝΟΣ  για ενημέρωση εμπορικών προσφορών και προωθητικών ενεργειών.</label>
+                    </div>
+                  </div>
+                  <div class="small-6 column rightOptin">
+                   <div class="small-1 column ">
+                    <input id="checkbox2" type="checkbox"></div>
+                    <div class="small-11 column">
+                    <label class="optinLabel" for="checkbox2">Αποδέχομαι τους όρους συμμετοχής.</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </form>
+            <div class="row">
+             <div class="small-6 column"><button id='userformsave' class="submitBtnPhone formButtons"></button></div>
+             <div class="small-6 column "> <button id='userformsave' class="submitBtn formButtons">ΥΠΟΒΟΛΗ</button></div>
+            </div>
+         
+        </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
       
-      <div id="thankscontainer" class="contentItem"> <img src="img/bar.jpg"/>  <div class="message">Ευχαριστούμε πολύ για τη <br/>
-          συμμετοχή σου!<br/></div>
-           <button class="submitBtn" onClick="uiSetScreen('compcodeinputcontainer');">ΕΠΙΣΤΡΟΦΗ</button>
-  <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <div id="thankscontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="message">Ευχαριστούμε πολύ για τη <br/>
+          συμμετοχή σου!<br/>
+        </div>
+        <button class="submitBtn" onClick="uiSetScreen('compcodeinputcontainer');">ΕΠΙΣΤΡΟΦΗ</button>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- --> 
       
       <!--{starpages--><!--}starpages--> 

@@ -335,3 +335,60 @@ margin:20px;
 
 
 }
+.formLabel{
+background-image:url(../img/form-label-bg.png);
+background-repeat:no-repeat;
+padding-left:5px;
+
+}
+#userform .row{
+	width:420px;
+	line-height:12px !important;
+	
+}
+.formInput{
+margin:0 !important;
+padding:1px !important;
+line-height:12px !important;
+height:17px !important;
+float:left;
+}
+
+#userform .columns{
+
+padding:0!important;
+}
+.opts .column{
+	padding:2px !important;
+	margin:0 !important;
+}
+.optinLabel{
+font-size:8px !important;
+floar:left;
+line-height:9px;
+}
+.optin{
+margin-left:5px !important;
+}
+.rightOptin{
+margin-left:10px !important;
+}
+.contentWrapperForm{
+
+padding:5px 10px;
+}
+.contentWrapperForm h1{
+	font-size:18px;
+	font-family:'CentroBold', Arial, Helvetica, sans-serif;
+	text-align:center;
+	margin-top:5px;
+}
+.formButtons{
+margin:-5px !important;
+padding:0px !important;
+}
+.submitBtnPhone{
+	background-image:url(../img/buttonPhone.png);
+	width:142px;
+	height:29px;
+}
