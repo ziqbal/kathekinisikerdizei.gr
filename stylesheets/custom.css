@@ -35,7 +35,7 @@ body {
 }
 #bottom-arrow {
 	position:absolute;
-	top:60px;
+	top:70px;
 	left:35px;
 	cursor: pointer;
 }
@@ -113,7 +113,7 @@ body {
 }
 .chess-top {
 	width:850px;
-	height: 345px;
+	height: 310px;
 	margin: auto;
 	position: relative;
 	overflow:hidden;
@@ -147,6 +147,7 @@ body {
 	position:absolute;
 	right:90px;
 	top:-180px;
+	pointer-events:none;
 }
 #chess {
 	display:block;
@@ -157,7 +158,7 @@ body {
 #logos {
 	padding:0 10px;
 	position: absolute;
-	top: 220px;
+	top: 240px;
 	width: 850px;
 }
 #logo-germanos {
@@ -173,9 +174,9 @@ body {
 	width:425px;
 	margin:auto;
 	background-color:rgba(255,255,255,.25);
-	height:345px;
+	height:310px;
 	position:absolute;
-	top:345px;
+	top:293px;
 	left:210px;
 	
 }
@@ -187,13 +188,14 @@ body {
 font-size:18px;
 	font-family:'CentroBold', Arial, Helvetica, sans-serif;
 	text-align:center;
-
+margin:0  auto 10px;
 }
 .contentWrapper p{
 font-size:12px;
 	font-family:'CentroMedium', Arial, Helvetica, sans-serif;
 	text-align:center;
 	line-height:12px;
+	margin-bottom:5px;
 }
 
 .codeInput{
@@ -212,7 +214,7 @@ font-size:12px;
 	width:250px !important;
 	height:31px !important;
 	border:none !important;
-	margin:20px auto !important;
+	margin:10px auto !important;
 	font-size:0.8rem !important;
 	display:block;
 }
@@ -241,10 +243,15 @@ background-image:url(../img/button-bg-over.jpg)
 }
 
 .scrollbar{
-width:385px;
-height:300px;
-margin:auto;
+width:380px;
+height:280px;
+margin:auto 35px;
 
+}
+
+#prizescontainer .scrollbar{
+width:420px;
+margin:auto;
 }
 .scrollContent{
 
@@ -300,13 +307,13 @@ margin-bottom:10px;
 
 
 .columnTitle{
-width:170px;
+width:150px;
 text-align:center;
 font-size:14px;
 float: left;
 }
 .columnCell{
-width:170px;
+width:150px;
 text-align:left;
 font-size:14px;
 float: left !important;
@@ -381,7 +388,7 @@ padding:5px 10px;
 	font-size:18px;
 	font-family:'CentroBold', Arial, Helvetica, sans-serif;
 	text-align:center;
-	margin-top:5px;
+	margin-top:0px;
 }
 .formButtons{
 margin:-5px !important;
@@ -391,4 +398,8 @@ padding:0px !important;
 	background-image:url(../img/buttonPhone.png);
 	width:142px;
 	height:29px;
+}
+
+.ddLabel{
+	text-align:center;
 }

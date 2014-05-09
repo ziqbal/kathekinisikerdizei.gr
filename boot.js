@@ -32,8 +32,8 @@ var currentDiv=$( '#win' )
 
 		
 
-			TweenMax.fromTo( currentDiv, .7 , { top: 0},{top: -345 } );
-			TweenMax.fromTo( divToSlide , .7 , { top : 345 , autoAlpha : 0 } ,{ top : 0 , autoAlpha : 1 } );
+			TweenMax.fromTo( currentDiv, .7 , { top: 0},{top: -310 } );
+			TweenMax.fromTo( divToSlide , .7 , { top : 293 , autoAlpha : 0 } ,{ top : 0 , autoAlpha : 1 } );
 
 	$('.menu-item').each(function(index, element){
 		
@@ -56,8 +56,8 @@ var currentDiv=$( '#win' )
 
 	$( "#play-now" ).click( function( ) {
 
-splashScreenSlideOut($( '#storescontainerstep3' ),this);
-//		splashScreenSlideOut($( '#compcodeinputcontainer' ),this);
+//	splashScreenSlideOut($( '#storescontainerstep3' ),this);
+	splashScreenSlideOut($( '#compcodeinputcontainer' ),this);
 		//splashScreenSlideOut($( '#codelosecontainer' ),this);
 		
 	/*	$( '#content' ).html( $( '#compcodeinputcontainer' ).html( ) );*/
