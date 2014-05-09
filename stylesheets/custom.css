@@ -261,6 +261,9 @@ margin:auto;
 	font-family:'CentroMedium', Arial, Helvetica, sans-serif;
 font-size:10px;
 }
+#termsText p{
+	text-align:justify;
+}
 .presents-text{
 	font-family: "CentroBold",Helvetica,Arial,sans-serif;
 	font-size:12px;
