@@ -205,6 +205,17 @@ font-size:12px;
 	margin:20px auto !important;
 	font-size:0.8rem !important;
 }
+
+.selectDropDown{
+	background-image:url(../img/textBackground.jpg) !important; 
+	background-repeat:no-repeat;
+	width:250px !important;
+	height:31px !important;
+	border:none !important;
+	margin:20px auto !important;
+	font-size:0.8rem !important;
+	display:block;
+}
 .submitBtn
 {
 	background-image:url(../img/button-bg.jpg);
@@ -306,3 +317,21 @@ padding:2px;
 font-size:11px;
 }
 
+.message{
+text-align:center;
+font-size:24px;
+
+margin:50px;
+
+
+
+}
+.message span{
+
+font-size:18px;
+
+margin:20px;
+
+
+
+}

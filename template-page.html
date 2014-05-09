@@ -144,22 +144,20 @@
       
       <!-- ------- -->
       <div id="storescontainer" class="contentItem"> <img src="img/bar.jpg"/>
-        <div class="contentWrapper"> stores </div>
-
-
-        <button class='locationsCompany' data-name='1'>COSMOTE</button>
-        <button class='locationsCompany' data-name='2'>GERMANOS</button>
-
-        <select id='locationsRegion'>
-            <option value=''>SELECT REGION</option>
-        </select>
-        <select id='locationsArea'>
-          <option value=''>SELECT AREA</option>
-        </select>
-
-        <div id='locationslist'></div>
-
-
+        <div class="contentWrapper scrollbar">
+          <div class="scrollContent">
+            <h1>KATΑΣΤΗΜΑΤΑ </h1>
+            <button class='locationsCompany submitBtn' data-name='1'>COSMOTE</button>
+            <button class='locationsCompany submitBtn' data-name='2'>ΓΕΡΜΑΝΟΣ</button>
+            <select id='locationsRegion' class="selectDropDown">
+              <option value=''>Επιλέξτε Νομό</option>
+            </select>
+            <select id='locationsArea' class="selectDropDown">
+              <option value=''>Επιλέξτε πόλη</option>
+            </select>
+            <div id='locationslist'></div>
+          </div>
+        </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
       
@@ -169,9 +167,8 @@
             <h1>ΝΙΚΗΤΕΣ</h1>
             <div class="columnTitle">Όνομα</div>
             <div class="columnTitle">Δώρο</div>
-
             <div id='winnerslist'></div>
-
+            
             <!--
             <div class="columnCell">Όνομα</div>
             <div class="columnCell">Δώρο</div>
@@ -207,8 +204,8 @@
             <div class="columnCell">Δώρο</div>
             <div class="columnCell">Όνομα</div>
             <div class="columnCell">Δώρο</div>
-          -->
-
+          --> 
+            
           </div>
         </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
@@ -246,56 +243,50 @@
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </div>
         </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
-        
-           <!-- ------- -->
-        
-        
-      <div id="codenotvalidcontainer" class="contentItem"> <img src="img/bar.jpg"/> Code Not Valid
-        <button onClick="uiSetScreen('compcodeinputcontainer');">click to go back</button>
+      
+      <!-- ------- -->
+      
+      <div id="codenotvalidcontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="message">Ο κωδικός σου <br/>
+          δεν είναι έγκυρος.</div>
+        <button class="submitBtn" onClick="uiSetScreen('compcodeinputcontainer');">ΕΠΙΣΤΡΟΦΗ</button>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
       
-      
-      <div id="codelosecontainer" class="contentItem"> <img src="img/bar.jpg"/> LOSE LOSE <img id="bottom-bar" src="img/bar.jpg"/> </div>
+      <div id="codelosecontainer" class="contentItem"> <img src="img/bar.jpg"/>
+        <div class="message">Ευχαριστούμε πολύ για τη <br/>
+          συμμετοχή σου!<br/>
+          <br/>
+          <span class="subMessage">Συνέχισε να κάνεις τις αγορές σου σε <br/>
+          καταστήματα COSMOTE & ΓΕΡΜΑΝΟΣ και την επόμενη φορά μπορεί να είσαι <br/>
+          ΕΣΥ τυχερός! </span></div>
+        <button class="submitBtn" onClick="uiSetScreen('compcodeinputcontainer');">ΕΠΙΣΤΡΟΦΗ</button>
+        <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
       
-      
-      <div id="codewincontainer" class="contentItem"> <img src="img/bar.jpg"/>
-        <span id='codedidwinkey'></span> 
-
+      <div id="codewincontainer" class="contentItem"> <img src="img/bar.jpg"/> 
+      <span id='codedidwinkey'></span> 
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- --> 
       
-      
-      
       <!-- ------- -->
-      <div id="codeusedcontainer" class="contentItem"> <img src="img/bar.jpg"/>
-        <div id='codeuseddidwin'> <span onclick="uiSetScreen('compcodeinputcontainer');" id='codeuseddidwinkey'></span>  </div>
+      <div id="codeusedcontainer" class="contentItem"> <img src="img/bar.jpg"/> Code already used
+        <div id='codeuseddidwin'> CODE WON <span id='codeuseddidwinlabel'>???</span> </div>
         <div id='codeuseddidnotwin'> CODE DID NOT WIN </div>
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
       
-      
-      
-      
       <div id="userformcontainer" class="contentItem"> <img src="img/bar.jpg"/> USER FORM
         <form id='userform'>
-            <input type='text' name='firstname' value="Joe"/>
-            <input type='text' name='lastname' value="Bloggs"/>
+          <input type='text' name='firstname' value="Joe"/>
+          <input type='text' name='lastname' value="Bloggs"/>
         </form>
-
         <button id='userformsave'>SAVE</button>
-
         <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- -->
       
-      
-      
       <div id="thankscontainer" class="contentItem"> <img src="img/bar.jpg"/> Thank You For Playing! <img id="bottom-bar" src="img/bar.jpg"/> </div>
       <!-- ------- --> 
-      
-      
-      
       
       <!--{starpages--><!--}starpages--> 
       

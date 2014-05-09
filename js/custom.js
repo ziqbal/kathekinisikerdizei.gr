@@ -62,8 +62,8 @@ function animateMenus()
 
 var crownTL=new TimelineMax({repeat:-1, repeatDelay:3})
 
-//crownTL.add(TweenMax.to($('#top-crown'), .3, {rotation:20,scaleX:1.3,scaleY:1.3}))
-//crownTL.add(TweenMax.to($('#top-crown'), .3, {rotation:0,scaleX:1,scaleY:1}))
+crownTL.add(TweenMax.to($('#top-crown'), .3, {rotation:20,scaleX:1.3,scaleY:1.3}))
+crownTL.add(TweenMax.to($('#top-crown'), .3, {rotation:0,scaleX:1,scaleY:1}))
 
 
 }
