@@ -155,6 +155,7 @@
             <select id='locationsArea' class="selectDropDown">
               <option value=''>Επιλέξτε πόλη</option>
             </select>
+               
             <div id='locationslist'></div>
           </div>
         </div>
@@ -309,7 +310,10 @@
 		$(".scrollContent").mCustomScrollbar({
 					scrollButtons:{
 						enable:false
-					}
+					},
+					advanced:{
+    updateOnContentResize: true
+}
 				});
 		startAnim()
 		})
