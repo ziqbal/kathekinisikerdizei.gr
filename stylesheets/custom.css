@@ -407,6 +407,18 @@ padding:0px !important;
 .ddLabel{
 	text-align:center;
 }
+#checkbox1, #checkbox2{
+margin-bottom:1px !important;
+}
+.tooltip{
+height:106px !important;
+width:212px !important;
+background-image:url(../img/tooltip.png);
+background-color:transparent;
+display:block;
+visibility:hidden;
 
-#userformsave::after{
-	margin-bottom:20px;
+}
+.heightAdjust{
+height:5px !important;
+}
