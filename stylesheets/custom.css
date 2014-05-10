@@ -332,7 +332,7 @@ min-height: 40px;
 text-align:center;
 font-size:24px;
 
-margin:50px;
+margin:20px;
 
 
 
@@ -407,6 +407,28 @@ padding:0px !important;
 .ddLabel{
 	text-align:center;
 }
+#checkbox1, #checkbox2{
+margin-bottom:1px !important;
+}
+.tooltip{
+height:106px !important;
+width:212px !important;
+background-image:url(../img/tooltip.png);
+background-color:transparent;
+display:block;
+visibility:hidden;
 
-#userformsave::after{
-	margin-bottom:20px;
+}
+.heightAdjust{
+height:5px !important;
+}
+
+.alert-box
+{
+	width:400px !important;
+	height:300px !important;
+	margin:auto;
+	visibility:hiden;
+	text-align:center;
+	background-color:rgba(255,0,0,.5);
+}

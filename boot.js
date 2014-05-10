@@ -186,7 +186,12 @@ function isUserFormValid(){
 	        validationFlag=false;
 		}
 
+		if(!validationFlag)
+		{
+			TweenMax.to( $('.alert-box'), .7 , { autoAlpha : 1 } );
 
+		
+		}
         return(validationFlag);
 
 }
