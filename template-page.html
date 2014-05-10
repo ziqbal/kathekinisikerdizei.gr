@@ -296,6 +296,7 @@
       
       <div id="userformcontainer" class="contentItem"> <img src="img/bar.jpg"/>
         <div class="contentWrapperForm ">
+         <div data-alert class="alert-box">Παρακαλώ συμπληρώστε τα στοιχεία με τον αστερίσκο.<a href="#" class="close">&times;</a> </div>
           <div class="" >
             <h1>ΣΥΜΠΛΗΡΩΣΕ ΤΑ ΣΤΟΙΧΕΙΑ ΣΟΥ</h1>
             <form id='userform' data-abide>
@@ -369,15 +370,15 @@
               <div class="row opts">
                 <div class="small-6 column">
                   <div class="row">
-                    <div class="small-6 column optin">
-                      <div class="small-1 column ">
+                    <div class="small-6 column ">
+                      <div class="small-1 column heightAdjust">
                         <input name='chk1' id="checkbox1" type="checkbox" required>
                       </div>
                       <div class="small-11 column">
                         <label  class="optinLabel"for="checkbox1">Δηλώνω πως τα παραπάνω στοιχεία είναι αληθή. Οποιαδήποτε αναληθής πληροφορία αποκλείει τον/την νικητή/νικήτρια. </label>
                       </div>
                     </div>
-                    <div class="small-6 column  rightOptin">
+                    <div class="small-6 column  ">
                       <div class="small-1 column ">
                         <input name='chk2' id="checkbox2" type="checkbox" required>
                       </div>
@@ -387,7 +388,7 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="small-6 column   optin">
+                    <div class="small-6 column  ">
                       <div class="small-1 column ">
                         <input type="radio" name="pData" value="false" id="denyOptin" class="radioOptin" required>
                       </div>
@@ -395,7 +396,7 @@
                         <label class="optinLabel" for="denyOptin">Δεν συναινώ να τηρηθούν τα στοιχεία μου σε Αρχείο Προσωπικών Δεδομένων των εταιρειών COSMOTE και ΓΕΡΜΑΝΟΣ  για ενημέρωση εμπορικών προσφορών και προωθητικών ενεργειών.</label>
                       </div>
                     </div>
-                    <div class="small-6 column rightOptin">
+                    <div class="small-6 column ">
                       <div class="small-1 column ">
                         <input type="radio" name="pData" value="true" id="acceptOptin" class="radioOptin" required checked>
                       </div>
@@ -409,7 +410,7 @@
             </form>
             <div class="row">
               <div class="small-6 column">
-                <button  class="submitBtnPhone formButtons"></button>
+                <button data-tooltip class="submitBtnPhone formButtons has-tip [tip-top tip-left]" title=""></button>
               </div>
               <div class="small-6 column ">
                 <button id='userformsave' class="submitBtn formButtons">ΥΠΟΒΟΛΗ</button>
