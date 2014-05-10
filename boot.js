@@ -155,3 +155,39 @@ function uiSetScreen(screen){
 	window._uiScreen=screen;
 }
 
+
+function isUserFormValid(){
+
+        var validationFlag=true;
+        var str;
+
+        str=$("input[name=u_name]").val();
+        if(str==''){console.log("u_name");validationFlag=false;}
+        str=$("input[name=u_surname]").val();
+        if(str==''){console.log("u_surname");validationFlag=false;}
+        str=$("input[name=u_mobile]").val();
+        if(str==''){console.log("u_mobile");validationFlag=false;}
+        str=$("input[name=u_address]").val();
+        if(str==''){console.log("u_address");validationFlag=false;}
+        str=$("input[name=u_area]").val();
+        if(str=='') validationFlag=false; 
+        str=$("input[name=u_po]").val();
+        if(str=='') validationFlag=false; 
+        str=$("input[name=u_email]").val();
+        if(str=='') validationFlag=false; 
+
+
+        if (!$('#checkbox1').is(":checked")){
+        	console.log("checkbox1 fail");
+	        validationFlag=false;
+		}
+        if (!$('#checkbox2').is(":checked")){
+        	console.log("checkbox2 fail");
+	        validationFlag=false;
+		}
+
+
+        return(validationFlag);
+
+}
+
