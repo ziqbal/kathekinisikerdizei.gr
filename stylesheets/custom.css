@@ -425,10 +425,12 @@ height:5px !important;
 
 .alert-box
 {
-	width:400px !important;
+	position:absolute;
+	width:420px !important;
 	height:300px !important;
 	margin:auto;
-	visibility:hiden;
+	
 	text-align:center;
-	background-color:rgba(255,0,0,.5);
+	background-color:rgba(255,0,0,.9);
+	z-index:1000;
 }

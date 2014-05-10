@@ -9,6 +9,7 @@ function startAnim()
 	//TweenMax.set($('#chess'), {clip:'rect(250px 970px 300px 0px)'});
 	TweenMax.set($('.form-container'), {autoAlpha:0,marginTop:400});
 	TweenMax.to($('body'), .3, {alpha:1})
+	TweenMax.set($('.alert-box '),{autoAlpha : 0})
 //	initMenus()
 animateMenus()
 	initRollovers()

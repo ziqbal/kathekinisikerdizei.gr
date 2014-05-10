@@ -56,8 +56,8 @@ var currentDiv=$( '#win' )
 
 	$( "#play-now" ).click( function( ) {
 
-	splashScreenSlideOut($( '#userformcontainer' ),this);
-//	splashScreenSlideOut($( '#compcodeinputcontainer' ),this);
+//	splashScreenSlideOut($( '#userformcontainer' ),this);
+	splashScreenSlideOut($( '#compcodeinputcontainer' ),this);
 		//splashScreenSlideOut($( '#codelosecontainer' ),this);
 		
 	/*	$( '#content' ).html( $( '#compcodeinputcontainer' ).html( ) );*/
@@ -188,8 +188,9 @@ function isUserFormValid(){
 
 		if(!validationFlag)
 		{
-			TweenMax.to( $('.alert-box'), .7 , { autoAlpha : 1 } );
-
+			TweenMax.to( $('.alert-box'), .5 , { autoAlpha : 1 } );
+			
+			TweenMax.to( $('.alert-box'), .5, { autoAlpha : 0, delay:2 } );
 		
 		}
         return(validationFlag);
