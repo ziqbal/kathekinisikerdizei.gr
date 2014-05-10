@@ -1636,8 +1636,8 @@ select {
   font-weight: normal;
   margin-bottom: 1.25rem;
   position: relative;
-  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
-  font-size: 0.8125rem;
+  padding: 3.125rem 3.75rem 3.125rem 3.125rem;
+  font-size: 1.125rem;
   transition: opacity 300ms ease-out;
   background-color: #008cba;
   border-color: #0078a0;
@@ -1649,15 +1649,15 @@ select {
   padding: 9px 6px 4px;
   line-height: 0;
   position: absolute;
-  top: 50%;
+  top: 15px;
   margin-top: -0.6875rem;
-  right: 0.25rem;
-  color: #333333;
-  opacity: 0.3;
+  right: 0;
+  color: white;
+  opacity: 0.8;
 }
 /* line 95, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
 .alert-box .close:hover, .alert-box .close:focus {
-  opacity: 0.5;
+  opacity: 1;
 }
 /* line 115, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
 .alert-box.radius {

@@ -237,14 +237,14 @@
 // $include-html-alert-classes: $include-html-classes;
 
 // We use this to control alert padding.
-// $alert-padding-top: rem-calc(14);
+ $alert-padding-top: rem-calc(50);
 // $alert-padding-default-float: $alert-padding-top;
 // $alert-padding-opposite-direction: $alert-padding-top + rem-calc(10);
 // $alert-padding-bottom: $alert-padding-top;
 
 // We use these to control text style.
 // $alert-font-weight: normal;
-// $alert-font-size: rem-calc(13);
+$alert-font-size: rem-calc(18);
 // $alert-font-color: #fff;
 // $alert-font-color-alt: scale-color($secondary-color, $lightness: -66%);
 
@@ -258,19 +258,19 @@
 // $alert-bottom-margin: rem-calc(20);
 
 // We use these to style the close buttons
-// $alert-close-color: #333;
-// $alert-close-top: 50%;
-// $alert-close-position: rem-calc(4);
+$alert-close-color: #FFF;
+ $alert-close-top: 15px;
+ $alert-close-position: rem-calc(0);
 // $alert-close-font-size: rem-calc(22);
-// $alert-close-opacity: 0.3;
-// $alert-close-opacity-hover: 0.5;
+ $alert-close-opacity: .8;
+ $alert-close-opacity-hover: 1;
 // $alert-close-padding: 9px 6px 4px;
 
 // We use this to control border radius
 // $alert-radius: $global-radius;
 
 // We use this to control transition effects
-// $alert-transition-speed: 300ms;
+ $alert-transition-speed: 300ms;
 // $alert-transition-ease: ease-out;
 
 // Block Grid
