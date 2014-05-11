@@ -15,6 +15,7 @@
 <!--{notificationotnarchive--><!--}notificationotnarchive-->
 </head>
 <body>
+<!--<div style="position:absolute;"><a href="#" onClick="uiSetScreen('userformcontainer');">go to form |</a><a href="#" onClick="uiSetScreen('codeusedcontainer');"> go to used code |</a><a href="#" onClick="uiSetScreen('storescontainerstep2');"> go to stores select|</a></div>-->
 <div class="row top-row">
   <div class="column large-1"> </div>
   <div class="top-symbols column large-11">
@@ -157,9 +158,9 @@
       <div id="storescontainerstep2" class="contentItem"> <img src="img/bar.jpg"/>
         <div class="contentWrapper">
           <h1>KATAΣΤΗΜΑΤΑ <span id="storesCategory">COSMOTE</span></h1>
-          <label class="ddLabel" for='locationsRegion'>Επιλέξτε Νομό</label>
+          <label class="ddLabel" for='locationsRegion'>Επιλέξτε νομό</label>
           <select id='locationsRegion' class="selectDropDown">
-            <option value=''>Επιλέξτε Νομό</option>
+            <option value=''></option>
           </select>
           <label class="ddLabel" for='locationsArea'>Επιλέξτε πόλη</label>
           <select id='locationsArea' class="selectDropDown">
@@ -286,9 +287,13 @@
       <!-- ------- -->
       
       <div id="codeusedcontainer" class="contentItem"> <img src="img/bar.jpg"/>
-        <div id='codeuseddidwin'> <span onClick="uiSetScreen('compcodeinputcontainer');" id='codeuseddidwinkey'></span> </div>
+        <div id='codeuseddidwin'> <span onClick="uiSetScreen('compcodeinputcontainer');" id='codeuseddidwinkey'></span> 
+        
+         <button class="submitBtn formLink" onClick="uiSetScreen('userformcontainer');">ΥΠΟΒΟΛΗ ΣΤΟΙΧΕΙΩΝ</button>
+       
+        </div>
         <div id='codeuseddidnotwin'>
-          <div class="message">O κωδικός σου έχει επαναχρησιμοποιηθεί</div>
+          <div class="message ">O κωδικός σου έχει επαναχρησιμοποιηθεί</div>
         </div>
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       <!-- ------- -->
@@ -307,7 +312,7 @@
                   <label for="right-label1" class="formLabel">* Όνομα</label>
                 </div>
                 <div class="small-6 columns">
-                  <input name="u_name" class="formInput" type="text" id="right-label1" placeholder="Όνομα" required>
+                  <input name="u_name" class="formInput" type="text" id="right-label1"  required>
                 </div>
               </div>
               <div class="row">
@@ -315,7 +320,7 @@
                   <label for="right-label2" class="formLabel">* Επίθετο</label>
                 </div>
                 <div class="small-6 columns">
-                  <input name="u_surname" class="formInput" type="text" id="right-label2" placeholder="Επίθετο" required>
+                  <input name="u_surname" class="formInput" type="text" id="right-label2"  required>
                 </div>
               </div>
               <div class="row">
@@ -323,7 +328,7 @@
                   <label for="right-label3"  class="formLabel">* Κινητό τηλέφωνο </label>
                 </div>
                 <div class="small-6 columns">
-                  <input name="u_mobile" class="formInput" type="number" id="right-label3" placeholder="Κινητό τηλέφωνο " required>
+                  <input name="u_mobile" class="formInput" type="text" pattern="[0-9]{10}" id="right-label3"  required>
                 </div>
               </div>
               <div class="row">
@@ -331,7 +336,7 @@
                   <label  for="right-label4" class="formLabel">Σταθερό τηλέφωνο </label>
                 </div>
                 <div class="small-6 columns">
-                  <input name="u_phone" class="formInput" type="number" id="right-label4" placeholder="Σταθερό τηλέφωνο">
+                  <input name="u_phone" class="formInput" type="text" pattern="[0-9]{10}"  id="right-label4" >
                 </div>
               </div>
               <div class="row">
@@ -339,7 +344,7 @@
                   <label for="right-label5" class="formLabel">* Διεύθυνση</label>
                 </div>
                 <div class="small-6 columns">
-                  <input  name="u_address" class="formInput" type="text" id="right-label5" placeholder="Διεύθυνση" required>
+                  <input  name="u_address" class="formInput" type="text" id="right-label5"  required>
                 </div>
               </div>
               <div class="row">
@@ -347,7 +352,7 @@
                   <label for="right-label6" class="formLabel">* Περιοχή / Πόλη</label>
                 </div>
                 <div class="small-6 columns">
-                  <input  name="u_area" class="formInput" type="text" id="right-label6" placeholder="Περιοχή / Πόλη" required>
+                  <input  name="u_area" class="formInput" type="text" id="right-label6" required>
                 </div>
               </div>
               <div class="row">
@@ -355,7 +360,7 @@
                   <label for="right-label7" class="formLabel">* Τ.Κ.</label>
                 </div>
                 <div class="small-6 columns">
-                  <input  name="u_po" class="formInput" type="number" id="right-label7" placeholder="Τ.Κ." required>
+                  <input  name="u_po" class="formInput" type="text" pattern="[0-9]{5}" id="right-label7" required>
                 </div>
               </div>
               <div class="row">
@@ -363,7 +368,7 @@
                   <label for="right-label8" class="formLabel">* Ε-mail</label>
                 </div>
                 <div class="small-6 columns">
-                  <input  name="u_email" class="formInput" type="email" id="right-label8" placeholder="Ε-mail" required>
+                  <input  name="u_email" class="formInput" type="email" id="right-label8"  required>
                 </div>
               </div>
               <div class="row opts">
@@ -382,7 +387,7 @@
                         <input name='chk2' id="checkbox2" type="checkbox" required checked>
                       </div>
                       <div class="small-11 column">
-                        <label class="optinLabel" for="checkbox2">Αποδέχομαι τους όρους συμμετοχής.</label>
+                        <label class="optinLabel" >Αποδέχομαι <a href="txt/terms.pdf" target="_blank">τους  όρους συμμετοχής</a>.</label>
                       </div>
                     </div>
                   </div>

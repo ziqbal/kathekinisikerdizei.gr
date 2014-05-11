@@ -94,8 +94,8 @@ function initRollovers()
 		}
 	)
 	
-	var arrowTopTween=	TweenMax.to($('#home'), .6, {scale:1.1, ease:Strong.easeOut,paused:true})
-	$('#top-arrow').hover(
+	var arrowTopTween=	TweenMax.to($('#home'), .6, {scale:1.1, x:-8,y:-8, transformOrigin:"center", ease:Strong.easeOut,paused:true})
+	$('#home').hover(
 	function(){
 		
 	arrowTopTween.play()
@@ -107,7 +107,7 @@ function initRollovers()
 	)
 	
 	
-	var arrowBottomTween=	TweenMax.to($('#bottom-arrow'), .6, {top:"+7",scale:1.1,ease:Strong.easeOut,paused:true})
+	/*
 	$('#bottom-arrow').hover(
 	function(){
 		
@@ -117,7 +117,7 @@ function initRollovers()
 		{
 			arrowTopTween.reverse()
 		}
-	)
+	)*/
 
 /*	
 	$('#play-now').click(

@@ -12,6 +12,7 @@
 }
 body {
 	font-family:'CentroMedium', Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: aliased;
 	opacity:0;
 	background: url(../img/bg.jpg) no-repeat top center;
 }
@@ -24,25 +25,29 @@ body {
 }
 .top-symbols {
 	width: 600px;
-	margin:30px auto;
+	margin:20px auto;
 	position:relative;
 	display:block;
 	float:none;
 }
+#home{
+	cursor: pointer;
+position:absolute;
+}
 #top-arrow {
 	position:absolute;
-	cursor: pointer;
+	left:0;
 }
 #bottom-arrow {
 	position:absolute;
 	top:70px;
-	left:35px;
-	cursor: pointer;
+	left:30px;
+	
 }
 #top-crown {
 	left:175px;
 	position: absolute;
-	top: 50px;
+	top: 57px;
 }
 .sizer {
 	min-width:425px;
@@ -68,7 +73,6 @@ body {
 	line-height:51px;
 	opacity:1;
 	font-size:18px;
-	
 	font-family:"CentroBold", Arial, Helvetica, sans-serif;
 	margin-left:10px;
 	position:absolute;
@@ -177,259 +181,252 @@ body {
 	height:310px;
 	position:absolute;
 	top:293px;
-	left:210px;
-	
+	left:213px;
+	overflow:hidden;
 }
 
-.contentWrapper{
+.contentWrapper {
 	padding:15px;
 }
-.contentWrapper h1{
-font-size:18px;
+.contentWrapper h1 {
+	font-size:18px;
 	font-family:'CentroBold', Arial, Helvetica, sans-serif;
 	text-align:center;
-margin:0  auto 10px;
+	margin:0 auto 10px;
 }
-.contentWrapper p{
-font-size:12px;
+.contentWrapper p {
+	font-size:12px;
 	font-family:'CentroMedium', Arial, Helvetica, sans-serif;
 	text-align:center;
 	line-height:12px;
 	margin-bottom:5px;
 }
-
-.codeInput{
-	background-image:url(../img/textBackground.jpg) !important; 
+.codeInput {
+	background-image:url(../img/textBackground.jpg) !important;
 	background-repeat:no-repeat;
 	width:289px !important;
 	height:31px !important;
 	border:none !important;
 	margin:20px auto !important;
 	font-size:0.8rem !important;
+	tabindex:-1;
 }
-
-.selectDropDown{
-	background-image:url(../img/textBackground.jpg) !important; 
+.selectDropDown {
+	background-image:url(../img/dropdown-bg.jpg) !important;
+	    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+		-moz-appearance: none; 
+		text-indent: 0.01px;
+		text-overflow: ""; 
+		cursor:pointer;
 	background-repeat:no-repeat;
 	width:250px !important;
 	height:31px !important;
 	border:none !important;
-	margin:10px auto !important;
+	margin:20px auto !important;
 	font-size:0.8rem !important;
 	display:block;
 }
-.submitBtn
-{
+.submitBtn {
 	background-image:url(../img/button-bg.jpg);
-    border:none;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: block;
-    font-family: "CentroBold",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 14px; 
-   	padding:0;
-   	margin:10px auto;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
+	border:none;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	font-family: "CentroBold", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 14px;
+	padding:0;
+	margin:10px auto;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
 	width:141px;
 	height:30px;
-   
 }
-.submitBtn:hover{
-background-image:url(../img/button-bg-over.jpg)
+.submitBtn:hover {
+	background-image:url(../img/button-bg-over.jpg)
 }
-
-.scrollbar{
-width:380px;
-height:280px;
-margin:auto 35px;
-
+.scrollbar {
+	width:380px;
+	height:280px;
+	margin:auto 35px;
 }
-
-#prizescontainer .scrollbar{
-width:420px;
-margin:auto;
+#prizescontainer .scrollbar {
+	width:420px;
+	margin:auto;
 }
-.scrollContent{
-
-} 
-
-#termsText{
+.scrollContent {
+}
+#termsText {
 	font-family:'CentroMedium', Arial, Helvetica, sans-serif;
-font-size:10px;
+	font-size:10px;
 }
-#termsText p{
+#termsText p {
 	text-align:justify;
 }
-.presents-text{
-	font-family: "CentroBold",Helvetica,Arial,sans-serif;
+.presents-text {
+	font-family: "CentroBold", Helvetica, Arial, sans-serif;
 	font-size:12px;
 	line-height:22px;
 	float:left;
-	width:300px;
-	}
-
-.presents-text::after{
+	width:320px;
+}
+.presents-text::after {
 	clear:both;
-	
 }
-.presentsWrapper{
-margin-left:10px;
+.presentsWrapper {
+	margin-left:10px;
 }
-.present{
-float:left;
-height:22px;
-margin-right:5px;
-font-size:13px;
-background-repeat:no-repeat;
-width:37px;
-padding-left:2px;
+.present {
+	float:left;
+	height:22px;
+	margin-right:5px;
+	font-size:13px;
+	background-repeat:no-repeat;
+	width:37px;
+	padding-left:2px;
 }
-.presents-light{
+.formLink{
+ bottom: 10px;
+    font-size: 12px;
+    height: 20px;
+    left: 142px;
+    line-height: 12px;
+    position: absolute;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.presents-light {
 	background-image:url(../img/presents-arrow-light.png);
-	
 }
-.presents-dark{
+.presents-dark {
 	background-image:url(../img/presents-arrow-dark.png);
 	color:#fff;
 }
-.presentsList{
-list-style-type: none;
-
+.presentsList {
+	width: 395px;
+	list-style-type: none;
 }
-
-ul li{
-float:left;
+ul li {
+	float:left;
 }
-.presentsSpacer{
-margin-bottom:10px;
+.presentsSpacer {
+	margin-bottom:10px;
 }
-
-
-.columnTitle{
-width:150px;
-text-align:center;
-font-size:14px;
-float: left;
+.columnTitle {
+	width:150px;
+	text-align:center;
+	font-size:14px;
+	float: left;
 }
-.columnCell{
-width:150px;
-text-align:left;
-font-size:14px;
-float: left !important;
-margin:5px;
-background:#CCC;
-line-height:18px;
-padding:2px;
-font-size:11px;
-min-height: 40px;
+.columnCell {
+	width:150px;
+	text-align:left;
+	font-size:14px;
+	float: left !important;
+	margin:5px;
+	background:#CCC;
+	line-height:18px;
+	padding:2px;
+	font-size:11px;
+	min-height: 40px;
 }
-
-.message{
-text-align:center;
-font-size:24px;
-
-margin:20px;
-
-
-
+.message {
+	text-align:center;
+	font-size:24px;
+	margin:20px;
 }
-.message span{
-
-font-size:18px;
-
-margin:20px;
-
-
-
+.message span {
+	font-size:18px;
+	margin:20px;
 }
-.formLabel{
-background-image:url(../img/form-label-bg.png);
-background-repeat:no-repeat;
-padding-left:5px;
-
+.formLabel {
+	background-image:url(../img/form-label-bg.png);
+	background-repeat:no-repeat;
+	padding-left:5px;
 }
-#userform .row{
-	width:420px;
+#userform .row {
+
 	line-height:12px !important;
-	
+	   margin-left: 1px;
+    width: 418px;
 }
-.formInput{
-margin:0 !important;
-padding:1px !important;
-line-height:12px !important;
-height:17px !important;
-float:left;
+.formInput {
+	margin:0 !important;
+	padding:1px !important;
+	line-height:12px !important;
+	height:17px !important;
+	float:left;
 }
-
-#userform .columns{
-
-padding:0!important;
+#userform .columns {
+	padding:0!important;
 }
-.opts .column{
-	padding:2px !important;
+.opts .column {
+	padding:1px !important;
 	margin:0 !important;
 }
-.optinLabel{
-font-size:6px !important;
-floar:left;
-line-height:9px;
+.optinLabel {
+	font-size:8px !important;
+	floar:left;
+	line-height:9px;
 }
-.optin{
-margin-left:5px !important;
+.optin {
+	margin-left:5px !important;
 }
-.rightOptin{
-margin-left:10px !important;
+.rightOptin {
+	margin-left:10px !important;
 }
-.contentWrapperForm{
-
-padding:5px 10px;
+.contentWrapperForm {
+	padding:2px;
 }
-.contentWrapperForm h1{
+.contentWrapperForm h1 {
 	font-size:18px;
 	font-family:'CentroBold', Arial, Helvetica, sans-serif;
 	text-align:center;
-	margin-top:0px;
+	 margin-bottom: 2px;
+    margin-top: -5px;
 }
-.formButtons{
-margin:-5px !important;
-padding:0px !important;
+.formButtons {
+	margin:0px !important;
+	padding:0px !important;
 }
-.submitBtnPhone{
+.submitBtnPhone {
 	background-image:url(../img/buttonPhone.png);
 	width:142px;
 	height:29px;
+	 left: 30px;
 }
+#userformsave{
+left:20px;
 
-.ddLabel{
+}
+.ddLabel {
 	text-align:center;
 }
-#checkbox1, #checkbox2{
-margin-bottom:1px !important;
+#checkbox1, #checkbox2 {
+	margin-bottom:1px !important;
 }
-.tooltip{
-height:106px !important;
-width:212px !important;
-background-image:url(../img/tooltip.png);
-background-color:transparent;
-display:block;
-visibility:hidden;
-
+.tooltip {
+	height:106px !important;
+	width:212px !important;
+	background-image:url(../img/tooltip.png);
+	background-color:transparent;
+	display:block;
+	visibility:hidden;
 }
-.heightAdjust{
-height:5px !important;
+.heightAdjust {
+	height:5px !important;
 }
-
-.alert-box
-{
+.alert-box {
 	position:absolute;
 	width:420px !important;
 	height:300px !important;
 	margin:auto;
-	
 	text-align:center;
 	background-color:rgba(255,0,0,.9);
 	z-index:1000;
