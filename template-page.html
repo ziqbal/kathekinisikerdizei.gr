@@ -1,5 +1,5 @@
 <html class="no-js" lang="en">
-<!-- Horas non numero nisi serenas -->
+<!-- -->
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -300,7 +300,7 @@
       <!-- ------- -->
       
       <div id="codeusedcontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
-        <div id='codeuseddidwin'> <span onClick="uiSetScreen('compcodeinputcontainer');" id='codeuseddidwinkey'></span> 
+        <div id='codeuseddidwin'> <span onClick="uiSetScreen('compcodeinputcontainer');" id='codeuseddidwinkey'><!--<img src="img/responses/b1.png" width="425" height="290">--></span> 
         
         <button id='formnotsavedbutton' class="submitBtn formLink" onClick="uiSetScreen('userformcontainer');">ΥΠΟΒΟΛΗ ΣΤΟΙΧΕΙΩΝ</button>
         
@@ -325,7 +325,7 @@
                   <label for="right-label1" class="formLabel">* Όνομα</label>
                 </div>
                 <div class="small-6 columns">
-                  <input name="u_name" class="formInput" type="text" id="right-label1"  required>
+                  <input name="u_name" class="formInput" type="text" id="right-label1" onFocus="if(this.value == 'Συμπληρώστε το όνομά σας') { this.value = ''; }"  required>
                 </div>
               </div>
               <div class="row">
@@ -333,7 +333,7 @@
                   <label for="right-label2" class="formLabel">* Επίθετο</label>
                 </div>
                 <div class="small-6 columns">
-                  <input name="u_surname" class="formInput" type="text" id="right-label2"  required>
+                  <input name="u_surname" class="formInput" type="text" id="right-label2" onFocus="if(this.value == 'Συμπληρώστε το επίθετό σας') { this.value = ''; }"required>
                 </div>
               </div>
               <div class="row">
@@ -341,7 +341,7 @@
                   <label for="right-label3"  class="formLabel">* Κινητό τηλέφωνο </label>
                 </div>
                 <div class="small-6 columns">
-                  <input name="u_mobile" class="formInput" type="text" pattern="[0-9]{10}" id="right-label3"  required>
+                  <input name="u_mobile" class="formInput" type="text" pattern="[0-9]{10}" id="right-label3"  required onFocus="if(this.value == 'Συμπληρώστε το κινητό σας') { this.value = ''; }">
                 </div>
               </div>
               <div class="row">
@@ -357,7 +357,7 @@
                   <label for="right-label5" class="formLabel">* Διεύθυνση</label>
                 </div>
                 <div class="small-6 columns">
-                  <input  name="u_address" class="formInput" type="text" id="right-label5"  required>
+                  <input  name="u_address" class="formInput" type="text" id="right-label5"  required onFocus="if(this.value == 'Συμπληρώστε τη διεύθυνσή σας') { this.value = ''; }">
                 </div>
               </div>
               <div class="row">
@@ -365,7 +365,7 @@
                   <label for="right-label6" class="formLabel">* Περιοχή / Πόλη</label>
                 </div>
                 <div class="small-6 columns">
-                  <input  name="u_area" class="formInput" type="text" id="right-label6" required>
+                  <input  name="u_area" class="formInput" type="text" id="right-label6" required onFocus="if(this.value == 'Συμπληρώστε την περιοχή σας') { this.value = ''; }">
                 </div>
               </div>
               <div class="row">
@@ -373,7 +373,7 @@
                   <label for="right-label7" class="formLabel">* Τ.Κ.</label>
                 </div>
                 <div class="small-6 columns">
-                  <input  name="u_po" class="formInput" type="text" pattern="[0-9]{5}" id="right-label7" required>
+                  <input  name="u_po" class="formInput" type="text" pattern="[0-9]{5}" id="right-label7" required onFocus="if(this.value == 'Συμπληρώστε τον Τ.Κ. σας') { this.value = ''; }">
                 </div>
               </div>
               <div class="row">
@@ -381,7 +381,7 @@
                   <label for="right-label8" class="formLabel">* Ε-mail</label>
                 </div>
                 <div class="small-6 columns">
-                  <input  name="u_email" class="formInput" type="email" id="right-label8"  required>
+                  <input  name="u_email" class="formInput" type="email" id="right-label8"  required onFocus="if(this.value == 'Συμπληρώστε τo email σας') { this.value = ''; }">
                 </div>
               </div>
               <div class="row opts">
