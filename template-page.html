@@ -11,10 +11,23 @@
 <script src="bower_components/modernizr/modernizr.js"></script>
 <script src="js/jquery.js"></script>
 <script src="boot.js"></script>
-
+ <script type="text/javascript">               
+        function cancelKey(e) {
+            var e = (window.event) ? event : e;
+            if (e.keyCode == 9) { // Tab
+                if (window.event) {
+                    window.event.returnValue = false;
+                    }
+                else {
+                    if (e.cancelable) { e.preventDefault(); }
+                        }
+                    }
+                }
+                document.onkeydown = cancelKey;
+    </script>
 <!--{notificationotnarchive--><!--}notificationotnarchive-->
 </head>
-<body>
+<body >
 <!--<div style="position:absolute;"><a href="#" onClick="uiSetScreen('userformcontainer');">go to form |</a><a href="#" onClick="uiSetScreen('codeusedcontainer');"> go to used code |</a><a href="#" onClick="uiSetScreen('storescontainerstep2');"> go to stores select|</a></div>-->
 <div class="row top-row">
   <div class="column large-1"> </div>
@@ -65,10 +78,10 @@
   </div>
   <div class="columns large-10 medium-10 small-10 chess-wrapper">
     <div class="chess-top">
-      <div id="win" class="contentItem"> <img src="img/win2000.png" > </div>
+      <div id="win" class="contentItem" tabindex=-1> <img src="img/win2000.png" > </div>
       
       <!-- ------- -->
-      <div id="compcodeinputcontainer"  class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="compcodeinputcontainer"  class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class='contentWrapper'>
           <h1>ΠΛΗΚΤΡΟΛΟΓΗΣΕ ΤΟΝ ΚΩΔΙΚΟ ΣΟΥ</h1>
           <input class='_compcodeinput codeInput' type='text' value=''/>
@@ -79,7 +92,7 @@
       
       <!-- ------- -->
       
-      <div id="prizescontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="prizescontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="contentWrapper scrollbar">
           <ul class="presentsList scrollContent">
             <h1>ΔΩΡΑ</h1>
@@ -144,7 +157,7 @@
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       
       <!-- ------- -->
-      <div id="storescontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="storescontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="contentWrapper scrollbar">
           <div class="scrollContent">
             <h1>KATΑΣΤΗΜΑΤΑ </h1>
@@ -155,7 +168,7 @@
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       <!-- ------- -->
       
-      <div id="storescontainerstep2" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="storescontainerstep2" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="contentWrapper">
           <h1>KATAΣΤΗΜΑΤΑ <span id="storesCategory">COSMOTE</span></h1>
           <label class="ddLabel" for='locationsRegion'>Επιλέξτε νομό</label>
@@ -170,7 +183,7 @@
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       
       <!-- ------- -->
-      <div id="storescontainerstep3" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="storescontainerstep3" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="contentWrapper scrollbar">
           <div class="scrollContent" >
             <h1>Έχετε επιλέξει να εμφανιστούν τα καταστήματα <br/>
@@ -182,7 +195,7 @@
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       
       <!-- ------- -->
-      <div id="winnerscontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="winnerscontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="contentWrapper scrollbar">
           <div class="scrollContent">
             <h1>ΝΙΚΗΤΕΣ</h1>
@@ -232,7 +245,7 @@
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       <!-- ------- -->
       
-      <div id="instructionscontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="instructionscontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="contentWrapper">
           <h1>ΠΩΣ ΣΥΜΜΕΤΕΧΩ;</h1>
           <p>Σε όποιο δίκτυο και αν ανήκεις, <br/>
@@ -248,7 +261,7 @@
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       <!-- ------- -->
       
-      <div id="termscontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="termscontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="contentWrapper scrollbar" id="termsText">
           <div class="scrollContent" >
             <h1>ΟΡΟΙ ΣΥΜΜΕΤΟΧΗΣ</h1>
@@ -265,14 +278,14 @@
       
       <!-- ------- -->
       
-      <div id="codenotvalidcontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="codenotvalidcontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="message">Ο κωδικός σου <br/>
           δεν είναι έγκυρος.</div>
         <button class="submitBtn" onClick="uiSetScreen('compcodeinputcontainer');">ΕΠΙΣΤΡΟΦΗ</button>
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       <!-- ------- -->
       
-      <div id="codelosecontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="codelosecontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="message">Ευχαριστούμε πολύ για τη <br/>
           συμμετοχή σου!<br/>
           <br/>
@@ -281,12 +294,12 @@
           ΕΣΥ τυχερός! </span></div>
         <button class="submitBtn" onClick="uiSetScreen('compcodeinputcontainer');">ΕΠΙΣΤΡΟΦΗ</button>
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
-      <div id="codewincontainer" class="contentItem"> <img src="img/bar.jpg"/> <span id='codedidwinkey'></span> <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
+      <div id="codewincontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/> <span id='codedidwinkey'></span> <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       <!-- ------- --> 
       
       <!-- ------- -->
       
-      <div id="codeusedcontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="codeusedcontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div id='codeuseddidwin'> <span onClick="uiSetScreen('compcodeinputcontainer');" id='codeuseddidwinkey'></span> 
         
          <button class="submitBtn formLink" onClick="uiSetScreen('userformcontainer');">ΥΠΟΒΟΛΗ ΣΤΟΙΧΕΙΩΝ</button>
@@ -298,7 +311,7 @@
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       <!-- ------- -->
       
-      <div id="userformcontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="userformcontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="contentWrapperForm ">
          <div  class="alert-box">Παρακαλώ συμπληρώστε τα στοιχεία με τον αστερίσκο.<a href="#" class="close">&times;</a> </div>
           <div class="" >
@@ -426,7 +439,7 @@
         <!--<img id="bottom-bar" src="img/bar.jpg"/> --></div>
       <!-- ------- -->
       
-      <div id="thankscontainer" class="contentItem"> <img src="img/bar.jpg"/>
+      <div id="thankscontainer" class="contentItem" tabindex=-1> <img src="img/bar.jpg"/>
         <div class="message">Ευχαριστούμε πολύ για τη <br/>
           συμμετοχή σου!<br/>
         </div>
