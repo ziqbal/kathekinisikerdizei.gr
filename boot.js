@@ -162,37 +162,104 @@ function isUserFormValid(){
         var str;
 
         str=$("input[name=u_name]").val();
-        if(str==''){console.log("u_name");validationFlag=false;}
+        if(str==''|| str=='Συμπληρώστε το όνομά σας'){console.log("u_name");
+		validationFlag=false; 
+		$( '#right-label1').addClass("inputError")
+		TweenMax.to( $('#right-label1'), .5 , { borderColor:'#F00'} );
+		$('#right-label1').val('Συμπληρώστε το όνομά σας')
+		}else{
+		TweenMax.to( $('#right-label1'), .5 , { borderColor:'#CCCCCC'} );
+		
+		}
+		
+		
+		
         str=$("input[name=u_surname]").val();
-        if(str==''){console.log("u_surname");validationFlag=false;}
+        if(str==''|| str=='Συμπληρώστε το επίθετό σας'){console.log("u_surname");validationFlag=false;
+		TweenMax.to( $('#right-label2'), .5 , { borderColor:'#F00'} );
+		$('#right-label2').val('Συμπληρώστε το επίθετό σας')
+		}else{
+		TweenMax.to( $('#right-label2'), .5 , { borderColor:'#CCCCCC'} );
+		
+		
+		}
+		
+		
+		
+		
         str=$("input[name=u_mobile]").val();
-        if(str==''){console.log("u_mobile");validationFlag=false;}
+        if(str==''|| str=='Συμπληρώστε το κινητό σας'){console.log("u_mobile");validationFlag=false;
+		TweenMax.to( $('#right-label3'), .5 , { borderColor:'#F00'} );
+		$('#right-label3').val('Συμπληρώστε το κινητό σας')
+		}else{
+		TweenMax.to( $('#right-label3'), .5 , { borderColor:'#CCCCCC'} );
+				
+		}
+		
+		
         str=$("input[name=u_address]").val();
-        if(str==''){console.log("u_address");validationFlag=false;}
+        if(str==''|| str=='Συμπληρώστε τη διεύθυνσή σας'){console.log("u_address");validationFlag=false;
+		TweenMax.to( $('#right-label5'), .5 , { borderColor:'#F00'} );
+		$('#right-label5').val('Συμπληρώστε τη διεύθυνσή σας')
+		}else{
+		TweenMax.to( $('#right-label5'), .5 , { borderColor:'#CCCCCC'} );
+		
+		}
         str=$("input[name=u_area]").val();
-        if(str=='') validationFlag=false; 
+        if(str==''|| str=='Συμπληρώστε την περιοχή σας') 
+		{
+		validationFlag=false; 
+		TweenMax.to( $('#right-label6'), .5 , { borderColor:'#F00'} );
+		$('#right-label6').val('Συμπληρώστε την περιοχή σας')
+		}else{
+		TweenMax.to( $('#right-label6'), .5 , { borderColor:'#CCCCCC'} );
+		
+		}
+		
+		
         str=$("input[name=u_po]").val();
-        if(str=='') validationFlag=false; 
+        if(str==''|| str=='Συμπληρώστε τον Τ.Κ. σας') 
+		{validationFlag=false; 
+		TweenMax.to( $('#right-label7'), .5 , { borderColor:'#F00'} );
+		$('#right-label7').val('Συμπληρώστε τον Τ.Κ. σας')
+		}else{
+		TweenMax.to( $('#right-label7'), .5 , { borderColor:'#CCCCCC'} );
+		
+		
+		}
         str=$("input[name=u_email]").val();
-        if(str=='') validationFlag=false; 
-
+		
+        if(str=='' || str=='Συμπληρώστε τo email σας') 
+		{
+		validationFlag=false; 
+		TweenMax.to( $('#right-label8'), .5 , { borderColor:'#F00'} );
+		$('#right-label8').val('Συμπληρώστε τo email σας')
+		}else{
+		TweenMax.to( $('#right-label8'), .5 , { borderColor:'#CCCCCC'} );
+		}
 
         if (!$('#checkbox1').is(":checked")){
         	console.log("checkbox1 fail");
 	        validationFlag=false;
+			TweenMax.to( $('#cbLabel1'), .5 , { css:{color:'#F00'}} );
+			
+		}else{
+			TweenMax.to( $('#cbLabel1'), .5 , { css:{color:'#4D4D4D'}});
 		}
+		
+		
+		
+		
         if (!$('#checkbox2').is(":checked")){
         	console.log("checkbox2 fail");
 	        validationFlag=false;
+			TweenMax.to( $('#cbLabel2'), .5 , { css:{color:'#F00'}} );
+			
+		}else{
+			TweenMax.to( $('#cbLabel2'), .5 , { css:{color:'#4D4D4D'} });
 		}
 
-		if(!validationFlag)
-		{
-			TweenMax.to( $('.alert-box'), .5 , { autoAlpha : 1 } );
-			
-			TweenMax.to( $('.alert-box'), .5, { autoAlpha : 0, delay:2 } );
 		
-		}
         return(validationFlag);
 
 }
